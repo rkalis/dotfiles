@@ -30,4 +30,4 @@ for fn in os.listdir(source_path + f_dir):
 		verbose_symlink(source_path + f_dir + fn, dest_path + f_dir + fn)
 
 # Run the initial setup
-os.system("setup.fish")
+os.system("fish " + source_path + "functions/setup.fish")
