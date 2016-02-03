@@ -1,0 +1,16 @@
+brew-cask
+findutils
+gnupg
+maven
+openssl
+wget
+gcc
+gdb
+valgrind
+node
+fish
+#
+# Languages
+python
+python3
+lua
