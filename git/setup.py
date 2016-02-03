@@ -6,7 +6,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))) + "/
 from setup_functions import verbose_symlink
 
 # Determine source and destination paths
-source_path = os.path.split(os.path.realpath(__file__))[0] + "/"
+source_path = os.path.dirname(os.path.abspath(__file__)) + "/"
 dest_path = os.path.expanduser("~/")
 
 print("Source path:\t ",    source_path)

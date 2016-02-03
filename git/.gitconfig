@@ -2,7 +2,7 @@
 	name = Rosco Kalis
 	email = roscokalis@gmail.com
 [core]
-	excludesfile = /Users/roscokalis/.gitignore_global
+	excludesfile = ~/.gitignore_global
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
