@@ -1,4 +1,4 @@
-# Dotfiles
+# Dotfiles (Work in Progress)
 
 ## Installation
 1. Run the root setup.py script
