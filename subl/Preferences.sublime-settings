@@ -1,5 +1,5 @@
 {
-	"color_scheme": "Packages/Color Scheme - Default/Monokai custom.tmTheme",
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
 	"dictionary": "Packages/Language - English/en_GB.dic",
 	"font_size": 12.0,
 	"ignored_packages":
@@ -13,5 +13,5 @@
 		99
 	],
 	"scroll_past_end": true,
-	"translate_tabs_to_spaces": false
+	"translate_tabs_to_spaces": true
 }

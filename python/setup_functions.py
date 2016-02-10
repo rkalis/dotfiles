@@ -3,7 +3,7 @@ import os
 
 # Prints the process and symlinks source to dest
 def verbose_symlink(source, dest, overwrite=True):
-	if os.path.exists(dest) and os.path.isfile(dest):
+	if os.path.lexists(dest):
 		if not overwrite:
 			print("File already exists.")
 			return -1

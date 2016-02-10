@@ -1,6 +1,5 @@
 brew-cask
 findutils
-gnupg
 maven
 openssl
 wget
@@ -9,6 +8,8 @@ gdb
 valgrind
 node
 fish
+mysql
+phpmyadmin
 #
 # Languages
 python
