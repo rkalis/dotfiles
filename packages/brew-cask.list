@@ -28,6 +28,8 @@ daisydisk
 adobe-reader
 cleanmymac
 bartender
+little-snitch
+micro-snitch
 #
 # Development
 intellij-idea
@@ -41,6 +43,7 @@ sublime-text
 love
 godot
 unity
+epic-games-launcher
 #
 # Business
 citrix-receiver
@@ -53,3 +56,4 @@ keepassx
 # Games
 steam
 runescape
+battle-net
