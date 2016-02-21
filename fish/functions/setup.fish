@@ -9,4 +9,6 @@ function setup
 	abbr gp git push
 	abbr gco git checkout
 	abbr ll ls -lhA
+	set -x -U HOMEBREW_CASK_OPTS "--appdir=/Applications"
+	set -x -U LSCOLORS "gxfxcxdxbxegedabagacad"
 end
