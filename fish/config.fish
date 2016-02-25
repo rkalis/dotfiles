@@ -1,1 +1,1 @@
-set -xg PATH $PATH ~/bin
+set -xg PATH $PATH ~/bin /usr/local/sbin
