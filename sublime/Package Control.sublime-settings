@@ -7,9 +7,11 @@
 	[
 		"AngelScript",
 		"fish-shell",
+		"Gradle_Language",
 		"LaTeXing",
 		"Lua Love",
 		"Package Control",
-		"Prolog"
+		"Prolog",
+		"SCSS"
 	]
 }

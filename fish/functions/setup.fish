@@ -10,6 +10,7 @@ function setup
 	abbr gd git diff
 	abbr gco git checkout
 	abbr ll ls -lhA
+	abbr contacts ssh root@contacts.ecpnv.com
 	set -x -U HOMEBREW_CASK_OPTS "--appdir=/Applications"
 	set -x -U LSCOLORS "gxfxcxdxbxegedabagacad"
 end

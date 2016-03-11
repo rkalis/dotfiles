@@ -8,7 +8,8 @@ list_files = {
 	"brewcask": "brew-cask.list",
 	"pip": "pip.list",
 	"npm": "npm.list",
-	"gem": "gem.list"
+	"gem": "gem.list",
+	"haxelib": "haxelib.list"
 }
 comment = re.compile("\#.*")
 
@@ -40,8 +41,15 @@ with open(path + list_files["npm"], "r") as f:
 			print("Installing " + line)
 			os.system("npm install -g " + line)
 
-with open(path + list_files["npm"], "r") as f:
+with open(path + list_files["gem"], "r") as f:
 	for line in f:
 		if not comment.match(line):
 			print("Installing " + line)
 			os.system("sudo gem install " + line)
+
+os.system("haxelib setup /usr/local/Cellar/haxe/3.2.1/lib/haxe/extra/haxelib_src")
+with open(path + list_files["haxelib"], "r") as f:
+	for line in f:
+		if not comment.match(line):
+			print("Installing " + line)
+			os.system("haxelib install " + line)
