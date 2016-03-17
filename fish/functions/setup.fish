@@ -1,6 +1,6 @@
 ## Defines abbreviations
 function setup
-	abbr mci maven clean install
+	abbr mci mvn clean install
 	abbr gf git fetch
 	abbr gs git status
 	abbr gc git commit -m
