@@ -8,7 +8,7 @@ from setup_functions import verbose_symlink
 
 # Determine source and destination paths
 source_path = os.path.dirname(os.path.abspath(__file__)) + "/"
-dest_path = os.path.expanduser("~/Library/Application Support/Sublime Text 2/Packages/User/")
+dest_path = os.path.expanduser("~/Library/Application Support/Sublime Text 3/Packages/User/")
 settings_regex = re.compile(".*\.sublime-settings")
 
 print("Source path:\t ",    source_path)
