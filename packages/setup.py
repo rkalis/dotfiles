@@ -15,7 +15,6 @@ comment = re.compile("\#.*")
 
 os.system("sudo -v")
 
-# Install all items from the brew lists
 with open(path + list_files["brewcask"], "r") as f:
 	for line in f:
 		if not comment.match(line):

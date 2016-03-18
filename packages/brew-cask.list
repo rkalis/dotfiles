@@ -10,10 +10,11 @@ microsoft-office
 #
 # Tools
 dashlane
-parallels-desktop
+vmware-fusion
 #
 # Creative
 blender
+paintbrush
 #
 # Utilities
 hammerspoon
@@ -38,6 +39,7 @@ java
 sourcetree
 xquartz
 sublime-text3
+clion
 #
 # Game Dev
 love
