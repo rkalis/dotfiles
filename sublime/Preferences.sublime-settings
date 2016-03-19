@@ -7,6 +7,7 @@
     [
         "Vintage"
     ],
+    "indent_to_bracket": true,
     "margin": 2,
     "rulers":
     [
@@ -14,5 +15,7 @@
         99
     ],
     "scroll_past_end": true,
+    "shift_tab_unindent": true,
+    "translate_tabs_to_spaces": true,
     "word_wrap": false
 }
