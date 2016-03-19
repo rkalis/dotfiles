@@ -17,5 +17,5 @@ os.makedirs(dest_path, exist_ok=True)
 
 # Symlink contents of the source to the destination
 for fn in os.listdir(source_path):
-	if fn != "setup.py":
-		verbose_symlink(source_path + fn, dest_path + fn)
+    if fn != "setup.py":
+        verbose_symlink(source_path + fn, dest_path + fn)

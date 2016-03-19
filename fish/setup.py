@@ -26,8 +26,8 @@ verbose_symlink(source_path + config_file, dest_path + config_file)
 
 # Symlink contents of the source to the destination
 for fn in os.listdir(source_path + f_dir):
-	if fish_regex.match(fn):
-		verbose_symlink(source_path + f_dir + fn, dest_path + f_dir + fn)
+    if fish_regex.match(fn):
+        verbose_symlink(source_path + f_dir + fn, dest_path + f_dir + fn)
 
 # Run the initial setup
 os.system("fish " + source_path + "functions/setup.fish")

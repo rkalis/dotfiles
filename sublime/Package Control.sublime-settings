@@ -1,23 +1,23 @@
 {
-	"bootstrapped": true,
-	"in_process_packages":
-	[
-	],
-	"installed_packages":
-	[
-		"AngelScript",
-		"BracketHighlighter",
-		"Color Highlighter",
-		"fish-shell",
-		"Git",
-		"Gradle_Language",
-		"LaTeXing",
-		"Lua Love",
-		"Markdown Preview",
-		"Package Control",
-		"Project Manager",
-		"Prolog",
-		"SCSS",
-		"SublimeCodeIntel"
-	]
+    "bootstrapped": true,
+    "in_process_packages":
+    [
+    ],
+    "installed_packages":
+    [
+        "AngelScript",
+        "BracketHighlighter",
+        "Color Highlighter",
+        "fish-shell",
+        "Git",
+        "Gradle_Language",
+        "LaTeXing",
+        "Lua Love",
+        "Markdown Preview",
+        "Package Control",
+        "Project Manager",
+        "Prolog",
+        "SCSS",
+        "SublimeCodeIntel"
+    ]
 }
