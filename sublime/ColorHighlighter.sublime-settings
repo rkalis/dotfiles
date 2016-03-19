@@ -1,0 +1,5 @@
+{
+    "style": "fill",
+    "ha_style": "fill",
+    "file_exts": [".css", ".sass", ".scss", ".less", ".styl", ".html", ".js", ".sublime-settings", ".tmTheme", ".erb", ".haml", ".back", ".py", ".md", ".php"]
+}

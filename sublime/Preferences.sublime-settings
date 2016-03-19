@@ -1,6 +1,7 @@
 {
-	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+	"close_windows_when_empty": true,
 	"dictionary": "Packages/Language - English/en_GB.dic",
+	"ensure_newline_at_eof_on_save": true,
 	"font_size": 12.0,
 	"ignored_packages":
 	[
@@ -13,5 +14,5 @@
 		99
 	],
 	"scroll_past_end": true,
-	"translate_tabs_to_spaces": true
+	"word_wrap": false
 }
