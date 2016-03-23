@@ -13,6 +13,7 @@ projects_dir = "Projects/"
 linter_dir = "SublimeLinter"
 settings_regex = re.compile(".*\.sublime-settings")
 project_regex = re.compile(".*\.sublime-project")
+keymap_regex = re.compile(".*\.sublime-keymap")
 
 print("Source path:\t ",    source_path)
 print("Destination path:", dest_path)
@@ -20,9 +21,9 @@ print("Destination path:", dest_path)
 # Create the destination
 os.makedirs(dest_path + projects_dir, exist_ok=True)
 
-# Symlink Sublime Settings
+# Symlink Sublime Settings and keymaps
 for fn in os.listdir(source_path):
-    if settings_regex.match(fn):
+    if settings_regex.match(fn) or keymap_regex.match(fn):
         verbose_symlink(source_path + fn, dest_path + fn)
 
 # Symlink Sublime Projects

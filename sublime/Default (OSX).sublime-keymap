@@ -1,0 +1,4 @@
+[
+    { "keys": ["super+shift+v"], "command": "paste" },
+    { "keys": ["super+v"], "command": "paste_and_indent" }
+]
