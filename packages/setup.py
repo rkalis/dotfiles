@@ -14,8 +14,6 @@ list_files = {
 }
 comment = re.compile("\#.*")
 
-os.system("sudo -v")
-
 with open(path + list_files["brewcask"], "r") as f:
     for line in f:
         if not comment.match(line):
