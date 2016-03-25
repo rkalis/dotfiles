@@ -1,6 +1,7 @@
 #! /usr/bin/env python
 import os
 import re
+import subprocess
 
 path = os.path.dirname(os.path.abspath(__file__)) + "/"
 list_files = {
@@ -46,7 +47,8 @@ with open(path + list_files["gem"], "r") as f:
             print("Installing " + line)
             os.system("sudo gem install " + line)
 
-os.system("haxelib setup /usr/local/Cellar/haxe/3.2.1/lib/haxe/extra/haxelib_src")
+haxe_version = subprocess.check_output("haxe -version", shell=True)
+os.system("haxelib setup /usr/local/Cellar/haxe/" + haxe_version + "/lib/haxe/extra/haxelib_src")
 with open(path + list_files["haxelib"], "r") as f:
     for line in f:
         if not comment.match(line):

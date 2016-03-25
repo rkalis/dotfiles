@@ -22,8 +22,7 @@ os.makedirs(dest_path + projects_dir, exist_ok=True)
 
 # Find any projects that aren't yet symlinked
 for fn in os.listdir(dest_path + projects_dir):
-    if project_regex.match(fn) and
-    not(os.path.islink(dest_path + projects_dir + fn)):
+    if project_regex.match(fn) and not(os.path.islink(dest_path + projects_dir + fn)):
         os.rename(  dest_path + projects_dir + fn,
                   source_path + projects_dir + fn)
 
