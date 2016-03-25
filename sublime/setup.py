@@ -10,7 +10,6 @@ from setup_functions import verbose_symlink
 source_path = os.path.dirname(os.path.abspath(__file__)) + "/"
 dest_path = os.path.expanduser("~/Library/Application Support/Sublime Text 3/Packages/User/")
 projects_dir = "Projects/"
-linter_dir = "SublimeLinter"
 settings_regex = re.compile(".*\.sublime-settings")
 project_regex = re.compile(".*\.sublime-project")
 keymap_regex = re.compile(".*\.sublime-keymap")
@@ -20,6 +19,13 @@ print("Destination path:", dest_path)
 
 # Create the destination
 os.makedirs(dest_path + projects_dir, exist_ok=True)
+
+# Find any projects that aren't yet symlinked
+for fn in os.listdir(dest_path + projects_dir):
+    if project_regex.match(fn) and
+    not(os.path.islink(dest_path + projects_dir + fn)):
+        os.rename(  dest_path + projects_dir + fn,
+                  source_path + projects_dir + fn)
 
 # Symlink Sublime Settings and keymaps
 for fn in os.listdir(source_path):
@@ -31,7 +37,3 @@ for fn in os.listdir(source_path + projects_dir):
     if project_regex.match(fn):
         verbose_symlink(source_path + projects_dir + fn,
                           dest_path + projects_dir + fn)
-
-# Symlink Sublime Linter (Removed)
-# for fn in os.listdir(source_path + linter_dir):
-#     verbose_symlink(source_path + linter_dir + fn, dest_path + linter_dir + fn)
