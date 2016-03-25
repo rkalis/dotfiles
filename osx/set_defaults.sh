@@ -14,16 +14,6 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # General UI/UX                                                               #
 ###############################################################################
 
-
-# Set computer name (as done via System Preferences → Sharing)
-#sudo scutil --set ComputerName "0x6D746873"
-#sudo scutil --set HostName "0x6D746873"
-#sudo scutil --set LocalHostName "0x6D746873"
-#sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "0x6D746873"
-
-# Set standby delay to 24 hours (default is 1 hour)
-# sudo pmset -a standbydelay 86400
-
 # Disable the sound effects on boot
 sudo nvram SystemAudioVolume=" "
 
@@ -71,47 +61,14 @@ defaults write com.apple.CrashReporter DialogType -string "none"
 # Set Help Viewer windows to non-floating mode
 defaults write com.apple.helpviewer DevMode -bool true
 
-# Reveal IP address, hostname, OS version, etc. when clicking the clock
-# in the login window
-sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
-
 # Restart automatically if the computer freezes
 sudo systemsetup -setrestartfreeze on
-
-# Never go into computer sleep mode
-# sudo systemsetup -setcomputersleep Off > /dev/null
-
-# Check for software updates daily, not just once per week
-# defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
-
-# Disable Notification Center and remove the menu bar icon
-# launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist 2> /dev/null
 
 # Disable smart quotes as they’re annoying when typing code
 defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 
 # Disable smart dashes as they’re annoying when typing code
 defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
-
-###############################################################################
-# SSD-specific tweaks                                                         #
-###############################################################################
-
-# Disable local Time Machine snapshots
-sudo tmutil disablelocal
-
-# Disable hibernation (speeds up entering sleep mode)
-# sudo pmset -a hibernatemode 0
-
-# # Remove the sleep image file to save disk space
-# sudo rm /private/var/vm/sleepimage
-# # Create a zero-byte file instead…
-# sudo touch /private/var/vm/sleepimage
-# # …and make sure it can’t be rewritten
-# sudo chflags uchg /private/var/vm/sleepimage
-
-# Disable the sudden motion sensor as it’s not useful for SSDs
-sudo pmset -a sms 0
 
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
@@ -138,15 +95,11 @@ defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int
 # (e.g. enable Tab in modal dialogs)
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
-# Use scroll gesture with the Ctrl (^) modifier key to zoom
-# defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
-# defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
-
 # Follow the keyboard focus while zoomed in
 defaults write com.apple.universalaccess closeViewZoomFollowsFocus -bool true
 
-# Disable press-and-hold for keys in favor of key repeat
-defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+# Enable press-and-hold for keys instead of key repeat
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool true
 
 # Set a blazingly fast keyboard repeat rate
 # defaults write NSGlobalDomain KeyRepeat -int 0
@@ -165,9 +118,6 @@ sudo systemsetup -settimezone "Europe/Amsterdam" > /dev/null
 # Disable auto-correct
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
-# Stop iTunes from responding to the keyboard media keys
-#launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/null
-
 ###############################################################################
 # Screen                                                                      #
 ###############################################################################
@@ -175,12 +125,6 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 # Require password immediately after sleep or screen saver begins
 # defaults write com.apple.screensaver askForPassword -int 1
 # defaults write com.apple.screensaver askForPasswordDelay -int 0
-
-# Save screenshots to the desktop
-# defaults write com.apple.screencapture location -string "${HOME}/Desktop"
-
-# Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
-# defaults write com.apple.screencapture type -string "png"
 
 # Disable shadow in screenshots
 defaults write com.apple.screencapture disable-shadow -bool true
@@ -198,25 +142,14 @@ sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutio
 # Finder: allow quitting via ⌘ + Q; doing so will also hide desktop icons
 defaults write com.apple.finder QuitMenuItem -bool true
 
-# Finder: disable window animations and Get Info animations
-defaults write com.apple.finder DisableAllAnimations -bool true
-
-# Set Google Drive as the default location for new Finder windows
-# For other paths, use `PfLo` and `file:///full/path/here/`
-defaults write com.apple.finder NewWindowTarget -string "PfLo"
-defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/Google\ Drive/"
+# Finder: enable window animations and Get Info animations
+defaults write com.apple.finder DisableAllAnimations -bool false
 
 # Show icons for hard drives, servers, and removable media on the desktop
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
 defaults write com.apple.finder ShowHardDrivesOnDesktop -bool true
 defaults write com.apple.finder ShowMountedServersOnDesktop -bool true
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
-
-# Finder: show hidden files by default
-#defaults write com.apple.finder AppleShowAllFiles -bool true
-
-# Global: show hidden files by default
-# defaults write -g AppleShowAllFiles -bool true
 
 # Finder: show all filename extensions
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
@@ -263,10 +196,10 @@ defaults write com.apple.finder OpenWindowForNewRemovableDisk -bool true
 # # Show item info to the right of the icons on the desktop
 # /usr/libexec/PlistBuddy -c "Set DesktopViewSettings:IconViewSettings:labelOnBottom false" ~/Library/Preferences/com.apple.finder.plist
 
-# # Enable snap-to-grid for icons on the desktop and in other icon views
-# /usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
-# /usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
-# /usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
+# Enable snap-to-grid for icons on the desktop and in other icon views
+/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
 
 # # Increase grid spacing for icons on the desktop and in other icon views
 # /usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:gridSpacing 100" ~/Library/Preferences/com.apple.finder.plist
@@ -278,7 +211,7 @@ defaults write com.apple.finder OpenWindowForNewRemovableDisk -bool true
 # /usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:iconSize 80" ~/Library/Preferences/com.apple.finder.plist
 # /usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:iconSize 80" ~/Library/Preferences/com.apple.finder.plist
 
-# Use list view in all Finder windows by default
+# Use column view in all Finder windows by default
 # Four-letter codes for the other view modes: `icnv`, `clmv`, `Flwv`
 defaults write com.apple.finder FXPreferredViewStyle -string "clmv"
 
@@ -288,15 +221,8 @@ defaults write com.apple.finder WarnOnEmptyTrash -bool false
 # Enable AirDrop over Ethernet and on unsupported Macs running Lion
 defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
 
-# Enable the MacBook Air SuperDrive on any Mac
-sudo nvram boot-args="mbasd=1"
-
 # Show the ~/Library folder
-# chflags nohidden ~/Library
-
-# Remove Dropbox’s green checkmark icons in Finder
-# file=/Applications/Dropbox.app/Contents/Resources/emblem-dropbox-uptodate.icns
-# [ -e "${file}" ] && mv -f "${file}" "${file}.bak"
+chflags nohidden ~/Library
 
 # Expand the following File Info panes:
 # “General”, “Open with”, and “Sharing & Permissions”
@@ -312,7 +238,7 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
 # Enable highlight hover effect for the grid view of a stack (Dock)
 defaults write com.apple.dock mouse-over-hilite-stack -bool true
 
-# Set the icon size of Dock items to 36 pixels
+# Set the icon size of Dock items to 64 pixels
 defaults write com.apple.dock tilesize -int 64
 
 # Change minimize/maximize window effect - genie, suck, or scale
@@ -371,15 +297,6 @@ defaults write com.apple.dock showhidden -bool true
 # Reset Launchpad, but keep the desktop wallpaper intact
 # find "${HOME}/Library/Application Support/Dock" -name "*-*.db" -maxdepth 1 -delete
 
-# Add iOS & Watch Simulator to Launchpad
-sudo ln -sf "/Applications/Xcode.app/Contents/Developer/Applications/Simulator.app" "/Applications/Simulator.app"
-sudo ln -sf "/Applications/Xcode.app/Contents/Developer/Applications/Simulator (Watch).app" "/Applications/Simulator (Watch).app"
-
-# Add a spacer to the left side of the Dock (where the applications are)
-#defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}'
-# Add a spacer to the right side of the Dock (where the Trash is)
-#defaults write com.apple.dock persistent-others -array-add '{tile-data={}; tile-type="spacer-tile";}'
-
 # Hot corners
 # Possible values:
 #  0: no-op
@@ -404,54 +321,6 @@ defaults write com.apple.dock wvous-bl-modifier -int 0
 # Bottom right screen corner → Desktop
 defaults write com.apple.dock wvous-br-corner -int 4
 defaults write com.apple.dock wvous-br-modifier -int 0
-
-###############################################################################
-# Spotlight                                                                   #
-###############################################################################
-
-# Hide Spotlight tray-icon (and subsequent helper)
-# sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search
-# Disable Spotlight indexing for any volume that gets mounted and has not yet
-# been indexed before.
-# Use `sudo mdutil -i off "/Volumes/foo"` to stop indexing any volume.
-# sudo defaults write /.Spotlight-V100/VolumeConfiguration Exclusions -array "/Volumes"
-# Change indexing order and disable some search results
-# Yosemite-specific search results (remove them if you are using OS X 10.9 or older):
-#   MENU_DEFINITION
-#   MENU_CONVERSION
-#   MENU_EXPRESSION
-#   MENU_SPOTLIGHT_SUGGESTIONS (send search queries to Apple)
-#   MENU_WEBSEARCH             (send search queries to Apple)
-#   MENU_OTHER
-defaults write com.apple.spotlight orderedItems -array \
-    '{"enabled" = 1;"name" = "APPLICATIONS";}' \
-    '{"enabled" = 1;"name" = "SYSTEM_PREFS";}' \
-    '{"enabled" = 1;"name" = "DIRECTORIES";}' \
-    '{"enabled" = 1;"name" = "PDF";}' \
-    '{"enabled" = 1;"name" = "FONTS";}' \
-    '{"enabled" = 0;"name" = "DOCUMENTS";}' \
-    '{"enabled" = 0;"name" = "MESSAGES";}' \
-    '{"enabled" = 0;"name" = "CONTACT";}' \
-    '{"enabled" = 0;"name" = "EVENT_TODO";}' \
-    '{"enabled" = 0;"name" = "IMAGES";}' \
-    '{"enabled" = 0;"name" = "BOOKMARKS";}' \
-    '{"enabled" = 0;"name" = "MUSIC";}' \
-    '{"enabled" = 0;"name" = "MOVIES";}' \
-    '{"enabled" = 0;"name" = "PRESENTATIONS";}' \
-    '{"enabled" = 0;"name" = "SPREADSHEETS";}' \
-    '{"enabled" = 0;"name" = "SOURCE";}' \
-    '{"enabled" = 0;"name" = "MENU_DEFINITION";}' \
-    '{"enabled" = 0;"name" = "MENU_OTHER";}' \
-    '{"enabled" = 0;"name" = "MENU_CONVERSION";}' \
-    '{"enabled" = 0;"name" = "MENU_EXPRESSION";}' \
-    '{"enabled" = 0;"name" = "MENU_WEBSEARCH";}' \
-    '{"enabled" = 0;"name" = "MENU_SPOTLIGHT_SUGGESTIONS";}'
-# Load new settings before rebuilding the index
-killall mds > /dev/null 2>&1
-# Make sure indexing is enabled for the main volume
-sudo mdutil -i on / > /dev/null
-# Rebuild the index from scratch
-sudo mdutil -E / > /dev/null
 
 ###############################################################################
 # Terminal & iTerm 2                                                          #
