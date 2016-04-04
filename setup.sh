@@ -1,4 +1,4 @@
-#! /usr/bin/env bash
+#! /usr/bin/env sh
 
 # Ask for the administrator password upfront
 sudo -v
@@ -12,7 +12,7 @@ xcode-select --install
 ./install_brew.sh
 osx/set_defaults.sh
 packages/setup.sh
-fish/setup.py
-git/setup.py
-bin/setup.py
-sublime/setup.py
+fish/setup.sh
+git/setup.sh
+bin/setup.sh
+sublime/setup.sh
