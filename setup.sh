@@ -12,7 +12,7 @@ xcode-select --install
 ./install_brew.sh
 osx/set_defaults.sh
 packages/setup.sh
-fish/setup.sh
+fish/setup.sh -chsh
 git/setup.sh
 bin/setup.sh
 sublime/setup.sh
