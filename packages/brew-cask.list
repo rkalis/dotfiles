@@ -4,7 +4,7 @@ skype
 google-drive
 dropbox
 transmission
-spotify
+google-play-music-desktop-player
 vlc
 microsoft-office
 #
@@ -32,6 +32,7 @@ cleanmymac
 bartender
 little-snitch
 micro-snitch
+soulseek
 #
 # Development
 intellij-idea
