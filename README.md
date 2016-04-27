@@ -9,6 +9,20 @@
   * [App for WhatsApp](https://itunes.apple.com/us/app/app-for-whatsapp/id963574990?l=de&ls=1&mt=12)
   * [Popcorn Time](http://popcorn-time.se/)
   * [Pyxel Edit](http://pyxeledit.com/)
+  * [UvAVPN](http://student.uva.nl/en/az/content/uvavpn/download/download-uvavpn-software.html)
+3. Point the Alfred preference sync to the right folder
+4. Point the Microsoft Remote Desktop folder to the right fodler
+5. Copy your saved ssh keys to ~/.ssh/
+
+## To Do
+
+* Automatically setup my apache web server configuration
+* ...
+
+## Caveats
+
+* I haven't found a way to automate or save Bartender config
+* I haven't found a way to automate or save Spectacle config
 
 ## Contents
 
