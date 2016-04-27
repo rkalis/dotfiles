@@ -116,6 +116,9 @@
   * [MySQL](https://www.mysql.com/)
   * [PostgreSQL](http://www.postgresql.org/)
   * [phpMyAdmin](https://www.phpmyadmin.net/)
+  * [SDL2 with extensions](https://www.libsdl.org/)
+  * [Android SDK](http://developer.android.com/sdk/index.html)
+  * [Apache Ant](http://ant.apache.org/)
   * Programming Languages
     * [Python 2 & 3](https://www.python.org/)
     * [Lua](https://www.lua.org/)
