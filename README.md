@@ -13,22 +13,25 @@
 ## Contents
 
 ### User Bin (bin/)
-* setup.py - Symlinks the other contents of the dotfiles/bin/ folder to ~/bin/
+* setup.sh - Symlinks the other contents of the dotfiles/bin/ folder to ~/bin/
 * togglehidden - A shell script that toggles between showing and hiding hidden files
 
 ### Fish (fish/)
-* setup.py - Symlinks all fish files to their corresponding location in ~/.config/fish/
+* setup.sh - Symlinks all fish files to their corresponding location in ~/.config/fish/
 * config.fish - Adds ~/bin to PATH
 * functions/
   * emptytrash.fish - Empties trash and clears system logs
+  * exit.fish - Calls builtin exit
   * fish_greeting.fish - My personal fish greeting using the full-colour fish logo
+  * fish_prompt - The Classic + Git prompt from the fish web config
+  * ls - Calling ls with parameter --color=auto
   * pubkey.fish - Copies the public key to the clipboard
-  * setup.fish - Initial setup for a new fish installation, contains abbreviations and universal variables
+  * setup.fish - Initial setup for a new fish installation, contains abbreviations
   * update.fish - Installs OS X Software Updates, updates Ruby gems, Homebrew, npm, and their installed packages
   * week.fish - Returns the current week number
 
 ### Git (git/)
-* setup.py - Symlinks the other contents of the dotfiles/git/ folder to ~/
+* setup.sh - Symlinks all git files to ~/
 * .gitignore_global - Contains global gitignores, such as OS-specific files and several compiled files
 * .gitconfig - Sets several global Git variables
 
@@ -36,31 +39,31 @@
 * set_defaults.sh - Executes a long list of commands pertaining to OS X Preferences
 
 ### Packages (packages/)
-* setup.py - Installs the contents of the .list files
-* brew.list - A list of brew packages
+* setup.sh - Installs the contents of the .list files
 * brew-cask.list - A list of brew cask packages
+* brew.list - A list of brew packages
 * gem.list - A list of Ruby gems
 * haxelib.list - A list of Haxelib packages
 * npm.list - A list of npm packages
 * pip.list - A list of pip packages
 
-### Python (python/)
-* setup_functions.py - Contains functions that are used in the different setup.py files
-  * verbose_symlink - Symlinks a file from a source path to a destination path in a verbose way, unlinking the existing     file first, might it exist
+### Helper Scripts (scripts/)
+* symlink.sh - Symlinks a file from a source path to a destination path in a verbose way, unlinking the existing file first, might it exist
 
 ### Sublime Text (sublime/)
-* setup.py - Symlinks all sublime-settings, sublime-keymap and sublime-project files to their correct destinations
-* Package Control.sublime-settings - Contains my installed Sublime Text packages
-* Preferences.sublime-settings - Contains my Sublime Text User Preferences
+* setup.sh - Symlinks all \*.sublime-\* files to their correct destinations
 * ColorHighlighter.sublime-settings - Contains my settings for the ColorHighlighter package
 * Default (OSX).sublime-keymap - Contains my custom keybinds
+* Package Control.sublime-settings - Contains my installed Sublime Text packages
+* Preferences.sublime-settings - Contains my Sublime Text User Preferences
 * Projects/
   * Arkapong.sublime-project - A pong/arkanoid game
   * dotfiles.sublime-project - This repository
   * ECP ContactApp.sublime-project - [ContactApp](https://github.com/incodehq/contactapp)
-  * Graphics.sublime-project - A school project
+  * Graphics.sublime-project - School project
   * kalis.me.sublime-project - [My personal website](http://kalis.me)
   * kindofcabrio.nl.sublime-project - [One of my websites](http://kindofcabrio.nl)
   * LuaSweeper.sublime-project - [My Minesweeper clone](https://github.com/rkalis/LuaSweeper)
   * SDL Lessons.sublime-project - [Learning SDL](http://www.willusher.io/pages/sdl2/)
   * Skøll Plugins.sublime-project - Wordpress plugins for my rowing club
+  * statred.sublime-project - School project
