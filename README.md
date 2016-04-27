@@ -12,6 +12,10 @@
 
 ## Contents
 
+### Root (/)
+* setup.sh - Calls all other setup.sh scripts
+* install_brew.sh - Installs homebrew over curl
+
 ### User Bin (bin/)
 * setup.sh - Symlinks the other contents of the dotfiles/bin/ folder to ~/bin/
 * togglehidden - A shell script that toggles between showing and hiding hidden files
@@ -40,12 +44,94 @@
 
 ### Packages (packages/)
 * setup.sh - Installs the contents of the .list files
-* brew-cask.list - A list of brew cask packages
-* brew.list - A list of brew packages
-* gem.list - A list of Ruby gems
-* haxelib.list - A list of Haxelib packages
-* npm.list - A list of npm packages
-* pip.list - A list of pip packages
+* brew-cask.list
+  * Essentials 
+    * [Google Chrome](https://www.google.com/chrome/)
+    * [Skype](https://www.skype.com/)
+    * [Google Drive](https://www.google.com/drive/download/)
+    * [Dropbox](https://www.dropbox.com/)
+    * [Transmission](https://www.transmissionbt.com/)
+    * [Google Play Music Desktop Player](https://github.com/MarshallOfSound/Google-Play-Music-Desktop-Player-UNOFFICIAL-)
+    * [VLC](http://www.videolan.org/index.html)
+    * [Microsoft Office](https://www.office.com/)
+  * Tools
+    * [Dashlane](https://www.dashlane.com/)
+    * [VMWare Fusion](https://www.vmware.com/products/fusion)
+  * Creative
+    * [Blender](https://www.blender.org/)
+    * [Paintbrush](http://paintbrush.sourceforge.net/)
+  * Utilities
+    * [Adobe Air](https://get.adobe.com/air/)
+    * [Hammerspoon](http://www.hammerspoon.org/)
+    * [Alfred](https://www.alfredapp.com/)
+    * [Dash](https://kapeli.com/dash)
+    * [Spectacle](https://www.spectacleapp.com/)
+    * [Keeping You Awake](https://github.com/newmarcel/KeepingYouAwake)
+    * [f.lux](https://justgetflux.com/)
+    * [mac2imgur](https://github.com/mileswd/mac2imgur)
+    * [The Unarchiver](https://itunes.apple.com/app/the-unarchiver/id425424353)
+    * [Daisy Disk](https://daisydiskapp.com/)
+    * [Adobe Reader](https://get.adobe.com/reader/)
+    * [CleanMyMac](http://macpaw.com/landings/cleanmymac3-store)
+    * [Bartender](https://www.macbartender.com/)
+    * [Little Snitch](https://www.obdev.at/products/littlesnitch/index.html)
+    * [Micro Snitch](https://www.obdev.at/products/microsnitch/index.html)
+    * [Soulseek](http://www.soulseekqt.net/)
+  * Development
+    * [IntelliJ IDEA](https://www.jetbrains.com/idea/)
+    * [iTerm 2](https://www.iterm2.com/)
+    * [Java](https://www.java.com/)
+    * [SourceTree](https://www.sourcetreeapp.com/)
+    * [XQuartz](http://www.xquartz.org/)
+    * [Sublime Text 3](https://www.sublimetext.com/3)
+    * [CLion](https://www.jetbrains.com/clion/)
+  * Game Dev
+    * [LÖVE2D](https://love2d.org/)
+    * [Godot](http://www.godotengine.org/)
+    * [Unity](https://unity3d.com/)
+    * [Unreal Engine](https://www.unrealengine.com/what-is-unreal-engine-4)
+  * Business
+    * [Citrix Receiver](https://www.citrix.com/go/receiver.html)
+    * [HipChat](https://www.hipchat.com/)
+    * [Viscosity](https://www.sparklabs.com/viscosity/)
+    * [TeamViewer](https://www.teamviewer.com/)
+    * [RealVNC](https://www.realvnc.com/)
+    * [KeePassX](https://www.keepassx.org/)
+  * Games
+    * [Steam](http://store.steampowered.com/)
+    * [Runescape](http://www.runescape.com/)
+    * [Battle.net](http://eu.battle.net/)
+* brew.list
+  * [Git](https://git-scm.com/)
+  * [GNU Findutils](http://www.gnu.org/software/findutils/)
+  * [GNU Coreutils](http://www.gnu.org/software/coreutils/coreutils.html)
+  * [Apache Maven](https://maven.apache.org/)
+  * [OpenSSL](https://www.openssl.org/)
+  * [GNU Wget](https://www.gnu.org/software/wget/)
+  * [GNU Compiler Collection](https://gcc.gnu.org/)
+  * [GNU Project Debugger](https://www.gnu.org/software/gdb/)
+  * [Valgrind](http://valgrind.org/)
+  * [Node.js](https://nodejs.org/)
+  * [Fish Shell](http://fishshell.com/)
+  * [MySQL](https://www.mysql.com/)
+  * [PostgreSQL](http://www.postgresql.org/)
+  * [phpMyAdmin](https://www.phpmyadmin.net/)
+  * Programming Languages
+    * [Python 2 & 3](https://www.python.org/)
+    * [Lua](https://www.lua.org/)
+    * [Haxe](http://haxe.org/)
+* gem.list
+  * [Jekyll](https://jekyllrb.com/) 
+* haxelib.list
+  * [HaxeFlixel](http://haxeflixel.com/)
+* npm.list
+  * [Apache Cordova](https://cordova.apache.org/)
+  * [Ionic](http://ionicframework.com/)
+  * [Gulp](http://gulpjs.com/)
+* pip.list
+  * [NumPy](http://www.numpy.org/)
+  * [SciPy](https://www.scipy.org/)
+  * [matplotlib](http://matplotlib.org/)
 
 ### Helper Scripts (scripts/)
 * symlink.sh - Symlinks a file from a source path to a destination path in a verbose way, unlinking the existing file first, might it exist
