@@ -1,5 +1,6 @@
 brew-cask
 git
+coreutils
 findutils
 maven
 openssl
@@ -10,7 +11,13 @@ valgrind
 node
 fish
 mysql
+postgresql
 phpmyadmin
+sdl2
+sdl2_image
+sdl2_ttf
+android-sdk
+ant
 #
 # Languages
 python
