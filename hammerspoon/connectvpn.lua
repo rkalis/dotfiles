@@ -1,3 +1,7 @@
+-----------------------------------------------
+-- Connect to vpn with Viscosity
+-----------------------------------------------
+
 function import_script(file)
     local f = io.open(file, "rb")
     local content = f:read("*all")
