@@ -6,7 +6,6 @@
   * [Telegram](https://itunes.apple.com/us/app/telegram/id747648890?mt=12)
   * [Xcode](https://itunes.apple.com/en/app/xcode/id497799835?mt=12)
   * [Wunderlist](https://itunes.apple.com/us/app/wunderlist-to-do-list-tasks/id410628904?mt=12)
-  * [App for WhatsApp](https://itunes.apple.com/us/app/app-for-whatsapp/id963574990?l=de&ls=1&mt=12)
   * [Popcorn Time](http://popcorn-time.se/)
   * [Pyxel Edit](http://pyxeledit.com/)
   * [UvAVPN](http://student.uva.nl/en/az/content/uvavpn/download/download-uvavpn-software.html)
@@ -60,6 +59,7 @@
 * setup.sh - Installs the contents of the .list files
 * brew-cask.list
   * Essentials 
+    * [WhatsApp](https://www.whatsapp.com/)
     * [Google Chrome](https://www.google.com/chrome/)
     * [Skype](https://www.skype.com/)
     * [Google Drive](https://www.google.com/drive/download/)
