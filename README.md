@@ -52,6 +52,12 @@
 * .gitignore_global - Contains global gitignores, such as OS-specific files and several compiled files
 * .gitconfig - Sets several global Git variables
 
+### Hammerspoon (hammerspoon/)
+* setup.sh - Symlinks all lua and AppleScript files to ~/.hammerspoon/
+* init.lua - Contains the main Hammerspoon config
+* connectvpn.lua - Binds a shortcut to the execution of connectvpn.applescript
+* connectvpn.applescript - Toggles Viscosity vpn connection
+
 ### OS X Preferences (osx/)
 * set_defaults.sh - Executes a long list of commands pertaining to OS X Preferences
 
