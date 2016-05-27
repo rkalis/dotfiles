@@ -71,7 +71,7 @@
     * [Google Drive](https://www.google.com/drive/download/)
     * [Dropbox](https://www.dropbox.com/)
     * [Transmission](https://www.transmissionbt.com/)
-    * [Google Play Music Desktop Player](https://github.com/MarshallOfSound/Google-Play-Music-Desktop-Player-UNOFFICIAL-)
+    * [Spotify](https://www.spotify.com/)
     * [VLC](http://www.videolan.org/index.html)
     * [Microsoft Office](https://www.office.com/)
   * Tools
@@ -84,7 +84,6 @@
     * [Adobe Air](https://get.adobe.com/air/)
     * [Hammerspoon](http://www.hammerspoon.org/)
     * [Alfred](https://www.alfredapp.com/)
-    * [Dash](https://kapeli.com/dash)
     * [Spectacle](https://www.spectacleapp.com/)
     * [Keeping You Awake](https://github.com/newmarcel/KeepingYouAwake)
     * [f.lux](https://justgetflux.com/)
