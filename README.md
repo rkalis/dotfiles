@@ -104,6 +104,7 @@
     * [XQuartz](http://www.xquartz.org/)
     * [Sublime Text 3](https://www.sublimetext.com/3)
     * [CLion](https://www.jetbrains.com/clion/)
+    * [Docker for Mac](https://www.docker.com/)
   * Game Dev
     * [LÖVE2D](https://love2d.org/)
     * [Godot](http://www.godotengine.org/)
@@ -168,6 +169,7 @@
   * Arkapong.sublime-project - A pong/arkanoid game
   * dotfiles.sublime-project - This repository
   * ECP ContactApp.sublime-project - [ContactApp](https://github.com/incodehq/contactapp)
+  * ejz.sublime-project - Wordpress site for [Zwaargaatnaakt](http://zwaargaatnaakt.nl)
   * Graphics.sublime-project - School project
   * kalis.me.sublime-project - [My personal website](http://kalis.me)
   * kindofcabrio.nl.sublime-project - [One of my websites](http://kindofcabrio.nl)
