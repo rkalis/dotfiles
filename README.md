@@ -1,17 +1,29 @@
 # Dotfiles (Work in Progress)
 
 ## Installation
-1. Run the root setup.sh script
-2. Install missing applications from the Mac App Store or Internet
+1. Install Homebrew (with caskroom/versions) and git
+
+  ```bash
+  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  brew tap caskroom/versions
+  brew install git
+  ```  
+2. Clone this repository 
+  
+  ```
+  git clone git@github.com:rkalis/dotfiles.git
+  ```
+3. Run the root setup.sh script
+4. Install missing applications from the Mac App Store or Internet
   * [Telegram](https://itunes.apple.com/us/app/telegram/id747648890?mt=12)
   * [Xcode](https://itunes.apple.com/en/app/xcode/id497799835?mt=12)
   * [Wunderlist](https://itunes.apple.com/us/app/wunderlist-to-do-list-tasks/id410628904?mt=12)
   * [Popcorn Time](http://popcorn-time.se/)
   * [Pyxel Edit](http://pyxeledit.com/)
   * [UvAVPN](http://student.uva.nl/en/az/content/uvavpn/download/download-uvavpn-software.html)
-3. Point the Alfred preference sync to the right folder
-4. Point the Microsoft Remote Desktop folder to the right fodler
-5. Copy your saved ssh keys to ~/.ssh/
+5. Point the Alfred preference sync to the right folder
+6. Point the Microsoft Remote Desktop folder to the right folder
+7. Copy your saved ssh keys to ~/.ssh/
 
 ## To Do
 
