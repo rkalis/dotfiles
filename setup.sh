@@ -9,7 +9,6 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 cd $(dirname "$0")
 
 xcode-select --install
-./install_brew.sh
 osx/set_defaults.sh
 packages/setup.sh
 fish/setup.sh -chsh
