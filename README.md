@@ -13,7 +13,7 @@
   ```
   git clone git@github.com:rkalis/dotfiles.git
   ```
-3. Run the root setup.sh script
+3. Run the `bootstrap.sh` script
 4. Install missing applications from the Mac App Store or Internet
   * [Telegram](https://itunes.apple.com/us/app/telegram/id747648890?mt=12)
   * [Xcode](https://itunes.apple.com/en/app/xcode/id497799835?mt=12)
