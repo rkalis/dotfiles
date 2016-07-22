@@ -14,12 +14,12 @@ mkdir -vp "$DESTINATION/Projects"
 
 # Move new .sublime-* files to the dotfiles folder
 cd "$DESTINATION"
-find . -name "*.sublime-*" -type f ! \( -name "*workspace*" \) | while read fn; do
+find * -name "*.sublime-*" -type f ! \( -name "*workspace*" \) | while read fn; do
     echo "Moving $fn to $SOURCE"
     mv "$DESTINATION/$fn" "$SOURCE/$fn"
 done
 
 cd "$SOURCE"
-find . -name "*.sublime-*" | while read fn; do
+find * -name "*.sublime-*" | while read fn; do
         symlink "$SOURCE/$fn" "$DESTINATION/$fn"
 done

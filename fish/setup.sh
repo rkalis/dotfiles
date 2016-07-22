@@ -12,7 +12,7 @@ echo "Destination path:\t $DESTINATION"
 
 mkdir -vp "$DESTINATION/functions"
 
-find . -name "*.fish" | while read fn; do
+find * -name "*.fish" | while read fn; do
     symlink "$SOURCE/$fn" "$DESTINATION/$fn"
 done
 
