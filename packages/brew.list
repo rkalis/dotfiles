@@ -18,6 +18,7 @@ sdl2_image
 sdl2_ttf
 android-sdk
 ant
+duti
 #
 # Languages
 python
