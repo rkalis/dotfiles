@@ -12,6 +12,6 @@ echo "Destination path:\t $DESTINATION"
 
 mkdir -vp "$DESTINATION"
 
-find * -not -name "setup.sh" -not -name ".*" -type f | while read fn; do
+find * -not -name "setup.sh" -type f | while read fn; do
     symlink "$SOURCE/$fn" "$DESTINATION/$fn"
 done

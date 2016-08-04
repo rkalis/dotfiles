@@ -10,6 +10,7 @@ DESTINATION="$(realpath ~/.config/fish)"
 echo "Source path:\t\t $SOURCE"
 echo "Destination path:\t $DESTINATION"
 
+echo "Creating destination folders"
 mkdir -vp "$DESTINATION/functions"
 
 find * -name "*.fish" | while read fn; do

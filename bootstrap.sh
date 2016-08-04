@@ -11,5 +11,6 @@ cd $(dirname "$0")
 xcode-select --install
 
 find * -name "setup.sh" | while read setup; do
+    echo "./$setup"
     ./$setup
 done
