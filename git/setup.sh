@@ -10,6 +10,6 @@ DESTINATION="$(realpath ~)"
 echo "Source path:\t\t $SOURCE"
 echo "Destination path:\t $DESTINATION"
 
-find * -name ".git*" | while read fn; do
+find . -name ".git*" | while read fn; do
     symlink "$SOURCE/$fn" "$DESTINATION/$fn"
 done
