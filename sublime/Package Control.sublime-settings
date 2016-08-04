@@ -17,9 +17,10 @@
 		"Lua Love",
 		"Markdown Preview",
 		"Package Control",
-		"Project Manager",
+		"ProjectManager",
 		"Prolog",
 		"SCSS",
-		"SublimeCodeIntel"
+		"SublimeCodeIntel",
+		"VimL"
 	]
 }
