@@ -1,11 +1,16 @@
-# Dotfiles (Work in Progress)
+# Dotfiles
 
 ## Installation
-1. Install Homebrew (with caskroom/versions) and git
+1. Install Homebrew (with taps) and git
 
   ```bash
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-  brew tap caskroom/versions
+  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)";\
+  brew tap caskroom/cask;\
+  brew tap caskroom/versions;\
+  brew tap homebrew/completions;\
+  brew tap homebrew/core;\
+  brew tap homebrew/php;\
+  brew tap homebrew/versions;\
   brew install git
   ```  
 2. Clone this repository 
@@ -137,8 +142,7 @@
     * [Steam](http://store.steampowered.com/)
     * [Runescape](http://www.runescape.com/)
     * [Battle.net](http://eu.battle.net/)
-* brew.list
-  * [Git](https://git-scm.com/)
+* ; brew.list
   * [GNU Findutils](http://www.gnu.org/software/findutils/)
   * [GNU Coreutils](http://www.gnu.org/software/coreutils/coreutils.html)
   * [Apache Maven](https://maven.apache.org/)
@@ -167,7 +171,7 @@
   * [Apache Cordova](https://cordova.apache.org/)
   * [Ionic](http://ionicframework.com/)
   * [Gulp](http://gulpjs.com/)
-* pip.list
+* pip.list & pip3.list
   * [NumPy](http://www.numpy.org/)
   * [SciPy](https://www.scipy.org/)
   * [matplotlib](http://matplotlib.org/)
@@ -193,3 +197,7 @@
   * SDL Lessons.sublime-project - [Learning SDL](http://www.willusher.io/pages/sdl2/)
   * Skøll Plugins.sublime-project - Wordpress plugins for my rowing club
   * statred.sublime-project - School project
+
+### Vim (vim/)
+* setup.sh - Symlinks all vim files to ~/
+* .vimrc - Basic Vim configuration
