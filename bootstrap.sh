@@ -13,5 +13,5 @@ xcode-select --install
 
 find * -name "setup.sh" | while read setup; do
     echo "./$setup"
-    ./$setup
+    ./$setup -chsh
 done
