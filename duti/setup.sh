@@ -1,6 +1,7 @@
 #! /usr/bin/env sh
 
-cd $(dirname "$0")
+DIR=$(dirname "$0")
+cd "$DIR"
 
 find * -not -name "setup.sh" -type f | while read fn; do
     while read ext; do

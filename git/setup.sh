@@ -1,6 +1,7 @@
 #! /usr/bin/env sh
 
-cd $(dirname "$0")
+DIR=$(dirname "$0")
+cd "$DIR"
 
 . ../scripts/symlink.sh
 
