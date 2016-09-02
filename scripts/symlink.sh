@@ -1,3 +1,5 @@
+#! /usr/bin/env sh
+
 function symlink() {
     OVERWRITTEN=""
     if [ -e "$2" ] || [ -h "$2" ]; then
