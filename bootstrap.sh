@@ -11,7 +11,11 @@ cd "$DIR"
 
 xcode-select --install
 
-find * -name "setup.sh" | while read setup; do
+# Package control must be executed first in order for the rest to work
+echo "./packages/setup.sh"
+./packages/setup..sh
+
+find * -name "setup.sh" -not -wholename "packages*" | while read setup; do
     echo "./$setup"
     ./$setup -chsh
 done
