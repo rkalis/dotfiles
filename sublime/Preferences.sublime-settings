@@ -1,5 +1,7 @@
 {
 	"close_windows_when_empty": true,
+	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
+	"default_line_ending": "unix",
 	"dictionary": "Packages/Language - English/en_GB.dic",
 	"ensure_newline_at_eof_on_save": true,
 	"font_size": 12.0,
@@ -18,6 +20,5 @@
 	"shift_tab_unindent": true,
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
-	"word_wrap": false,
-	"default_line_ending": "unix"
+	"word_wrap": false
 }

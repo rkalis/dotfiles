@@ -12,15 +12,14 @@
   brew tap homebrew/php;\
   brew tap homebrew/versions;\
   brew install git
-  ```  
-2. Clone this repository 
-  
+  ```
+2. Clone this repository
+
   ```
   git clone git@github.com:rkalis/dotfiles.git
   ```
 3. Run the `bootstrap.sh` script
 4. Install missing applications from the Mac App Store or Internet
-  * [Telegram](https://itunes.apple.com/us/app/telegram/id747648890?mt=12)
   * [Xcode](https://itunes.apple.com/en/app/xcode/id497799835?mt=12)
   * [Wunderlist](https://itunes.apple.com/us/app/wunderlist-to-do-list-tasks/id410628904?mt=12)
   * [Popcorn Time](http://popcorn-time.se/)
@@ -85,7 +84,7 @@
 ### Packages (packages/)
 * setup.sh - Installs the contents of the .list files
 * brew-cask.list
-  * Essentials 
+  * Essentials
     * [WhatsApp](https://www.whatsapp.com/)
     * [Google Chrome](https://www.google.com/chrome/)
     * [Skype](https://www.skype.com/)
@@ -164,7 +163,7 @@
     * [Lua](https://www.lua.org/)
     * [Haxe](http://haxe.org/)
 * gem.list
-  * [Jekyll](https://jekyllrb.com/) 
+  * [Jekyll](https://jekyllrb.com/)
 * haxelib.list
   * [HaxeFlixel](http://haxeflixel.com/)
 * npm.list

@@ -19,8 +19,11 @@
 		"Package Control",
 		"ProjectManager",
 		"Prolog",
+		"Python Checker",
 		"SCSS",
 		"SublimeCodeIntel",
+		"SublimeLinter",
+		"SublimeLinter-pep8",
 		"TypeScript",
 		"VimL"
 	]
