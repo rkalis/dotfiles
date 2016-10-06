@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+
+SCOPE="finder"
+ACTION="TRUE"
+
+while getopts ":gtf" OPTION "$@" ; do
+    case $OPTION in
+        g)
+            SCOPE="global"
+            ;;
+        t)
+            ACTION="TRUE"
+            ;;
+        f)
+            ACTION="FALSE"
+            ;;
+        \?)
+            echo "Usage: ${0##*/} [-g] [-t|-f]"
+            exit 1
+            ;;
+    esac
+done
+
+if [ "$SCOPE" == "global" ]; then
+    defaults write -g AppleShowAllFiles $ACTION
+fi
+defaults write com.apple.finder AppleShowAllFiles $ACTION
+
+echo "Set $SCOPE AppleShowAllFiles to $ACTION"
+
+killall Finder
