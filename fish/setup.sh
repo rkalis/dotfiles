@@ -13,6 +13,7 @@ echo "Destination path:\t $DESTINATION"
 
 echo "Creating destination folders"
 mkdir -vp "$DESTINATION/functions"
+mkdir -vp "$DESTINATION/completions"
 
 find * -name "*.fish" | while read fn; do
     symlink "$SOURCE/$fn" "$DESTINATION/$fn"
