@@ -23,6 +23,9 @@
     plugins:
       "git-diff": true
       "git-diffDecorationsZIndex": 0
+  "seti-ui":
+    disableAnimations: true
+    fileIcons: false
   "todo-show": {}
   welcome:
     showOnStartup: false
