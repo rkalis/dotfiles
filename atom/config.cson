@@ -1,0 +1,38 @@
+"*":
+  "atom-beautify":
+    _analyticsUserId: "9f24e8fc-8cbe-466c-8ccd-2acf3f2f5104"
+  "autoclose-html": {}
+  core:
+    audioBeep: false
+    openEmptyEditorOnStart: false
+    themes: [
+      "seti-ui"
+      "monokai-seti"
+    ]
+  editor:
+    backUpBeforeSaving: true
+    fontSize: 12
+    invisibles: {}
+    scrollPastEnd: true
+    showIndentGuide: true
+    showInvisibles: true
+    tabLength: 4
+  "exception-reporting":
+    userId: "15784b65-094e-6842-daeb-6fa8266a9c44"
+  "git-plus": {}
+  minimap:
+    plugins:
+      "git-diff": true
+      "git-diffDecorationsZIndex": 0
+  "todo-show": {}
+  welcome:
+    showOnStartup: false
+".source.ts":
+  editor:
+    tabLength: 4
+".source.tsx":
+  editor:
+    tabLength: 4
+".text.todo":
+  editor:
+    autoIndent: true

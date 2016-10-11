@@ -1,0 +1,19 @@
+#! /usr/bin/env sh
+
+DIR=$(dirname "$0")
+cd "$DIR"
+
+. ../scripts/symlink.sh
+
+SOURCE="$(realpath .)"
+DESTINATION="$(realpath ~/.atom)"
+
+echo "Source path:\t\t $SOURCE"
+echo "Destination path:\t $DESTINATION"
+
+echo "Creating destination folders"
+mkdir -vp "$DESTINATION"
+
+find * -not -name "setup.sh" -type f | while read fn; do
+    echo "$SOURCE/$fn" "$DESTINATION/$fn"
+done

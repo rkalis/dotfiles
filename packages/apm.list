@@ -1,0 +1,15 @@
+# TODO: Install this after brew cask
+#
+atom-beautify
+atom-typescript
+autoclose-html
+highlight-selected
+language-fish-shell
+linter
+minimap
+monokai-seti
+pigments
+project-manager
+seti-ui
+split-diff
+todo-show
