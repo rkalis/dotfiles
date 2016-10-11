@@ -1,4 +1,6 @@
-# TODO: Install this after brew cask
+# Themes
+seti-ui
+monokai-seti
 #
 atom-beautify
 atom-typescript
@@ -7,9 +9,7 @@ highlight-selected
 language-fish-shell
 linter
 minimap
-monokai-seti
 pigments
 project-manager
-seti-ui
 split-diff
 todo-show

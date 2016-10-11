@@ -10,6 +10,11 @@ sudo -v
 # # Keep-alive: update existing `sudo` time stamp until `.osx` has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
+# Set computer name
+sudo scutil --set ComputerName rmbp
+sudo scutil --set LocalHostName rmbp
+sudo scutil --set HostName rmbp
+
 ###############################################################################
 # General UI/UX                                                               #
 ###############################################################################
