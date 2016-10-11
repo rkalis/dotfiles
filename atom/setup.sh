@@ -15,7 +15,7 @@ echo "Creating destination folders"
 mkdir -vp "$DESTINATION"
 
 find * -not -name "setup.sh" -type f | while read fn; do
-    echo "$SOURCE/$fn" "$DESTINATION/$fn"
+    symlink "$SOURCE/$fn" "$DESTINATION/$fn"
 done
 
 
