@@ -2,14 +2,20 @@
 seti-ui
 monokai-seti
 #
-atom-beautify
+# Languages
+language-fish-shell
+language-applescript
+language-lua
 atom-typescript
+#
+# Plugins
+atom-beautify
 autoclose-html
 highlight-selected
-language-fish-shell
 linter
 minimap
 pigments
 project-manager
 split-diff
 todo-show
+script

@@ -15,7 +15,6 @@
     invisibles: {}
     scrollPastEnd: true
     showIndentGuide: true
-    showInvisibles: true
     tabLength: 4
   "exception-reporting":
     userId: "15784b65-094e-6842-daeb-6fa8266a9c44"
