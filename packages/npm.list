@@ -1,3 +1,4 @@
-cordova
-ionic
-gulp
+-g cordova
+-g ionic
+-g gulp
+-g typescript
