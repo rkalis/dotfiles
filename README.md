@@ -22,12 +22,10 @@
 4. Run the `bootstrap.sh` script
 5. Install missing applications from the Mac App Store or Internet
   * [Xcode](https://itunes.apple.com/en/app/xcode/id497799835?mt=12)
-  *
-  [Wunderlist](https://itunes.apple.com/us/app/wunderlist-to-do-list-tasks/id410628904?mt=12)
+  * [Wunderlist](https://itunes.apple.com/us/app/wunderlist-to-do-list-tasks/id410628904?mt=12)
   * [Popcorn Time](http://popcorn-time.se/)
   * [Pyxel Edit](http://pyxeledit.com/)
-  *
-  [UvAVPN](http://student.uva.nl/en/az/content/uvavpn/\download/download-uvavpn-software.html)
+  * [UvAVPN](http://student.uva.nl/en/az/content/uvavpn/\download/download-uvavpn-software.html)
 6. Point the Alfred preference sync to the right folder
 7. Point the Microsoft Remote Desktop folder to the right folder
 
