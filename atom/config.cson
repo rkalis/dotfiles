@@ -2,12 +2,15 @@
   "atom-beautify":
     _analyticsUserId: "9f24e8fc-8cbe-466c-8ccd-2acf3f2f5104"
   "autoclose-html": {}
+  "autocomplete-plus":
+    confirmCompletion: "tab always, enter when suggestion explicitly selected"
   core:
     audioBeep: false
     openEmptyEditorOnStart: false
+    projectHome: "~/repos/personal"
     themes: [
       "seti-ui"
-      "monokai-seti"
+      "monokai"
     ]
   editor:
     backUpBeforeSaving: true

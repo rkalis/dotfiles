@@ -3,11 +3,22 @@
     title: "dotfiles"
     group: "personal"
     paths: [
-      "/Users/rosco/repos/personal/dotfiles"
+      "~/repos/personal/dotfiles"
     ]
     icon: "icon-chevron-right"
     settings: {}
-    devMode: false
+    devMode: true
+    template: null
+  }
+  {
+    title: "kalis-syntax"
+    group: "personal"
+    paths: [
+      "~/repos/personal/kalis-syntax"
+    ]
+    icon: "icon-chevron-right"
+    settings: {}
+    devMode: true
     template: null
   }
 ]
