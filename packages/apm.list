@@ -1,6 +1,6 @@
 # Themes
 seti-ui
-monokai-seti
+monokai
 file-icons
 #
 # Languages
@@ -12,11 +12,14 @@ atom-typescript
 # Plugins
 atom-beautify
 autoclose-html
+autocomplete-love
+custom-app-icon
 highlight-selected
 linter
 minimap
 pigments
+platformio-ide-terminal
 project-manager
+script
 split-diff
 todo-show
-script

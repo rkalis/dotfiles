@@ -8,10 +8,14 @@
     audioBeep: false
     openEmptyEditorOnStart: false
     projectHome: "~/repos/personal"
+    telemetryConsent: "no"
     themes: [
       "seti-ui"
-      "monokai"
+      "kalis"
     ]
+    useCustomTitleBar: true
+  "custom-app-icon":
+    path: "~/.atom"
   editor:
     backUpBeforeSaving: true
     fontSize: 12
@@ -27,6 +31,7 @@
       "git-diff": true
       "git-diffDecorationsZIndex": 0
   "seti-ui":
+    compactView: true
     disableAnimations: true
     fileIcons: false
   "todo-show": {}
