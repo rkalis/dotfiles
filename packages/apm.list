@@ -1,6 +1,6 @@
 # Themes
 seti-ui
-monokai
+monokalis
 file-icons
 #
 # Languages
@@ -14,6 +14,7 @@ atom-beautify
 autoclose-html
 autocomplete-love
 custom-app-icon
+expand-region
 highlight-selected
 linter
 minimap

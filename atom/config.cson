@@ -11,7 +11,7 @@
     telemetryConsent: "no"
     themes: [
       "seti-ui"
-      "kalis"
+      "monokalis"
     ]
     useCustomTitleBar: true
   "custom-app-icon":
