@@ -5,18 +5,51 @@
     paths: [
       "~/repos/personal/dotfiles"
     ]
-    icon: "icon-chevron-right"
+    icon: "icon-gear"
     settings: {}
     devMode: true
     template: null
   }
   {
-    title: "kalis-syntax"
+    title: "monokalis-syntax"
     group: "personal"
     paths: [
-      "~/repos/personal/kalis-syntax"
+      "~/repos/personal/monokalis-syntax"
     ]
-    icon: "icon-chevron-right"
+    icon: "icon-paintcan"
+    settings: {}
+    devMode: true
+    template: null
+  }
+  {
+    title: "arkapong"
+    group: "personal"
+    paths: [
+      "~/repos/personal/arkapong"
+    ]
+    icon: "icon-rocket"
+    settings: {}
+    devMode: true
+    template: null
+  }
+  {
+    title: "endless"
+    group: "personal"
+    paths: [
+      "~/repos/personal/endless"
+    ]
+    icon: "icon-rocket"
+    settings: {}
+    devMode: true
+    template: null
+  }
+  {
+    title: "ionic-soundboard"
+    group: "personal"
+    paths: [
+      "~/repos/personal/ionic-soundboard"
+    ]
+    icon: "icon-unmute"
     settings: {}
     devMode: true
     template: null

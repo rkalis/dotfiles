@@ -14,8 +14,6 @@
       "monokalis"
     ]
     useCustomTitleBar: true
-  "custom-app-icon":
-    path: "~/.atom"
   editor:
     backUpBeforeSaving: true
     fontSize: 12
