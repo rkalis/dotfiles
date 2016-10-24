@@ -7,6 +7,9 @@ COMMENT=\#*
 
 sudo -v
 
+# Install Brewfile contents
+brew bundle
+
 find * -name "*.list" | while read fn; do
     cmd="${fn%.*}"
     # Check if the command starts with a number,

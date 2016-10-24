@@ -2,16 +2,10 @@
 
 ## Usage
 1. Copy your saved ssh keys to ~/.ssh/
-2. Install Homebrew (with taps) and git
+2. Install Homebrew and git
 
   ```bash
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)";\
-  brew tap caskroom/cask;\
-  brew tap caskroom/versions;\
-  brew tap homebrew/completions;\
-  brew tap homebrew/core;\
-  brew tap homebrew/php;\
-  brew tap homebrew/versions;\
+  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   brew install git
   ```
 3. Clone this repository
@@ -20,9 +14,7 @@
   git clone git@github.com:rkalis/dotfiles.git
   ```
 4. Run the `bootstrap.sh` script
-5. Install missing applications from the Mac App Store or Internet
-  * [Xcode](https://itunes.apple.com/en/app/xcode/id497799835?mt=12)
-  * [Wunderlist](https://itunes.apple.com/us/app/wunderlist-to-do-list-tasks/id410628904?mt=12)
+5. Install missing applications from the internet
   * [Popcorn Time](http://popcorn-time.se/)
   * [Pyxel Edit](http://pyxeledit.com/)
   * [UvAVPN](http://student.uva.nl/en/az/content/uvavpn/\download/download-uvavpn-software.html)
@@ -102,7 +94,7 @@ several compiled files
 OS X Preferences
 
 ### Packages (packages/)
-* setup.sh - Installs the contents of the .list files
+* setup.sh - Installs the contents of the .list files and the Brewfile
 
 ### Repositories (repos/)
 * setup.sh - Clones the repositories in the .list files at the corresponding

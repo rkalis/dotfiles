@@ -1,0 +1,109 @@
+cask_args appdir: '/Applications'
+
+tap 'caskroom/cask'
+tap 'caskroom/versions'
+tap 'homebrew/bundle'
+tap 'homebrew/completions'
+tap 'homebrew/php'
+tap 'homebrew/versions'
+
+brew 'git'
+brew 'coreutils'
+brew 'findutils', args: ['with-default-names']
+brew 'maven'
+brew 'openssl'
+brew 'wget'
+brew 'gcc'
+brew 'gdb'
+brew 'valgrind'
+brew 'node'
+brew 'fish'
+brew 'mysql'
+brew 'postgresql'
+brew 'phpmyadmin'
+brew 'sdl2'
+brew 'sdl2_image'
+brew 'sdl2_ttf'
+brew 'android-sdk'
+brew 'ant'
+brew 'duti'
+brew 'keybase'
+brew 'python'
+brew 'python3'
+brew 'lua'
+brew 'haxe'
+brew 'mas'
+
+
+# Essentials
+cask 'whatsapp'
+cask 'telegram'
+cask 'google-chrome'
+cask 'skype'
+cask 'google-drive'
+cask 'dropbox'
+cask 'transmission'
+cask 'spotify'
+cask 'vlc'
+cask 'microsoft-office'
+
+# Tools
+cask 'dashlane'
+cask 'vmware-fusion'
+
+# Creative
+cask 'blender'
+cask 'paintbrush'
+
+# Utilities
+cask 'adobe-air'
+cask 'hammerspoon'
+cask 'alfred'
+cask 'spectacle'
+cask 'keepingyouawake'
+cask 'flux'
+cask 'mac2imgur'
+cask 'the-unarchiver'
+cask 'daisydisk'
+cask 'adobe-reader'
+cask 'cleanmymac'
+cask 'bartender'
+cask 'little-snitch'
+cask 'soulseek'
+cask 'p4merge'
+
+# Development
+cask 'intellij-idea'
+cask 'iterm2'
+cask 'java'
+cask 'sourcetree'
+cask 'xquartz'
+cask 'atom'
+cask 'docker'
+
+# Game Dev
+cask 'love'
+cask 'godot'
+cask 'unity'
+cask 'epic-games-launcher'
+
+# Business
+cask 'citrix-receiver'
+cask 'hipchat'
+cask 'viscosity'
+cask 'teamviewer'
+cask 'real-vnc'
+cask 'keepassx'
+
+# Games
+cask 'steam'
+cask 'runescape'
+cask 'battle-net'
+cask 'logitech-gaming-software'
+cask 'osu'
+
+
+mas 'Microsoft Remote Desktop', id: 715768417
+mas 'Xcode', id: 497799835
+mas 'Wallpaperer', id: 1102248738
+mas 'Wunderlist', id: 410628904
