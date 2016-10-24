@@ -13,7 +13,7 @@ xcode-select --install
 
 # Package control must be executed first in order for the rest to work
 echo "./packages/setup.sh"
-./packages/setup..sh
+./packages/setup.sh
 
 find * -name "setup.sh" -not -wholename "packages*" | while read setup; do
     echo "./$setup"
