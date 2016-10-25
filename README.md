@@ -33,7 +33,7 @@ If you would like to use these dotfiles for yourself, I'd recommend changing at 
 #### OSX
 * At the top of the setup.sh file, my computer name is set, replace this with your own computer name
 
-###  Packages
+####  Packages
 This fodler is a collection of the programs and utilities I use frequently. These lists can easily be amended to your liking.
 
 #### Repos
