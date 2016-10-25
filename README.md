@@ -21,6 +21,24 @@
 6. Point the Alfred preference sync to the right folder
 7. Point the Microsoft Remote Desktop folder to the right folder
 
+## Customisation
+I strongly encourage you to play around with the configurations, and add or remove features.
+If you would like to use these dotfiles for yourself, I'd recommend changing at least the following:
+#### Atom
+* The `projects.cson` file contains my personal projects, replace these with your own projects
+
+#### Git
+* The .gitconfig file includes my [user] config, replace these with your own user name and email
+
+#### OSX
+* At the top of the setup.sh file, my computer name is set, replace this with your own computer name
+
+###  Packages
+This fodler is a collection of the programs and utilities I use frequently. These lists can easily be amended to your liking.
+
+#### Repos
+This folder is a collection of my own repos, some of which are even private. The existing lists can easily be edited or replaced by custom lists.
+
 ## To Do
 
 * Automatically setup my apache web server configuration
@@ -57,8 +75,7 @@ hidden files
 * app.package.id - Contains all extensions for the specified program
 
 ### Fish (fish/)
-* setup.sh - Symlinks all fish files to their corresponding location in
-~/.config/fish/
+* setup.sh - Symlinks all fish files to their corresponding location in ~/.config/fish/
 * config.fish - Adds ~/bin to PATH
 * completions/
   * repo.fish - Contains all repos as completions for the repo command
@@ -86,8 +103,8 @@ several compiled files
 ### Hammerspoon (hammerspoon/)
 * setup.sh - Symlinks all lua and AppleScript files to ~/.hammerspoon/
 * init.lua - Contains the main Hammerspoon config
-* connectvpn.lua - Binds a shortcut to the execution of connectvpn.applescript
-* connectvpn.applescript - Toggles Viscosity vpn connection
+* togglevpn.lua - Binds a shortcut to the execution of togglevpn.applescript
+* togglevpn.applescript - Toggles Viscosity vpn connection
 
 ### OS X Preferences (osx/)
 * set_defaults.sh - Executes a long list of commands pertaining to
