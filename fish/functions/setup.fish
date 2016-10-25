@@ -10,5 +10,4 @@ function setup
     abbr gd git diff
     abbr gco git checkout
     abbr ll ls -lhA
-    abbr contacts ssh root@contacts.ecpnv.com
 end
