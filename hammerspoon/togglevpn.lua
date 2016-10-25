@@ -9,5 +9,5 @@ function import_script(file)
     return content
 end
 
-local applescript = import_script("connectvpn.applescript")
+local applescript = import_script("togglevpn.applescript")
 hs.hotkey.bind({"cmd", "shift"}, "E", function() hs.applescript(applescript) end)

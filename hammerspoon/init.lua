@@ -1,4 +1,4 @@
-require "connectvpn"
+require "togglevpn"
 
 -----------------------------------------------
 -- Reload config on write
@@ -14,5 +14,5 @@ function reloadConfig(files)
         hs.reload()
     end
 end
-hs.pathwatcher.new(os.getenv("HOME") .. "/dotfiles/hammerspoon/", reloadConfig):start()
+hs.pathwatcher.new(os.getenv("HOME") .. ".hammerspoon/", reloadConfig):start()
 hs.alert.show("Config loaded")
