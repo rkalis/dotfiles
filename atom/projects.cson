@@ -54,4 +54,15 @@
     devMode: true
     template: null
   }
+    {
+      title: "skollsite"
+      group: "skoll"
+      paths: [
+        "~/repos/skoll/skollsite"
+      ]
+      icon: "icon-code"
+      settings: {}
+      devMode: true
+      template: null
+    }
 ]

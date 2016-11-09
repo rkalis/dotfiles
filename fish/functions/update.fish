@@ -6,6 +6,7 @@ function update
     brew cleanup
     npm install npm -g
     npm update -g
+    apm update
     sudo gem update --system
     sudo gem update
 end

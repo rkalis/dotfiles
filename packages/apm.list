@@ -5,22 +5,31 @@ file-icons
 #
 # Languages
 language-fish-shell
+language-apache
 language-applescript
+language-c
+language-haskell
+language-latex
 language-lua
 atom-typescript
 #
 # Plugins
 atom-beautify
+auto-detect-indentation
 autoclose-html
 autocomplete-love
 custom-app-icon
 expand-region
 highlight-selected
 linter
+less-autocompile
+lua-bracket-matcher
 minimap
 pigments
 platformio-ide-terminal
 project-manager
 script
+set-syntax
 split-diff
+tabs-to-spaces
 todo-show

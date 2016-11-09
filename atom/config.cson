@@ -20,6 +20,7 @@
     invisibles: {}
     scrollPastEnd: true
     showIndentGuide: true
+    showInvisibles: true
     tabLength: 4
   "exception-reporting":
     userId: "15784b65-094e-6842-daeb-6fa8266a9c44"
@@ -35,6 +36,24 @@
   "todo-show": {}
   welcome:
     showOnStartup: false
+".c.source":
+  editor:
+    tabLength: 4
+".cpp.source":
+  editor:
+    tabLength: 4
+".cson.source":
+  editor:
+    tabLength: 2
+".html.source":
+  editor:
+    tabLength: 4
+".json.source":
+  editor:
+    tabLength: 2
+".lua.source":
+  editor:
+    tabLength: 4
 ".source.ts":
   editor:
     tabLength: 4
