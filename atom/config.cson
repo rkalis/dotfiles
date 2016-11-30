@@ -19,7 +19,6 @@
     fontSize: 12
     invisibles: {}
     scrollPastEnd: true
-    showIndentGuide: true
     showInvisibles: true
     tabLength: 4
   "exception-reporting":
@@ -29,6 +28,9 @@
     plugins:
       "git-diff": true
       "git-diffDecorationsZIndex": 0
+  "platformio-ide-terminal":
+    toggles:
+      autoClose: true
   "seti-ui":
     compactView: true
     disableAnimations: true
