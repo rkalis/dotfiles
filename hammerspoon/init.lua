@@ -1,18 +1,14 @@
+require "asim"
+require "hyper"
 require "togglevpn"
+require "spectacle"
 
 -----------------------------------------------
 -- Reload config on write
 -----------------------------------------------
-function reloadConfig(files)
-    doReload = false
-    for _,file in pairs(files) do
-        if file:sub(-4) == ".lua" or file:sub(-12) == ".applescript" then
-            doReload = true
-        end
-    end
-    if doReload then
-        hs.reload()
-    end
+function reload_config(files)
+    hs.reload()
 end
-hs.pathwatcher.new(os.getenv("HOME") .. ".hammerspoon/", reloadConfig):start()
+
+hs.pathwatcher.new(os.getenv("HOME") .. "/.hammerspoon/", reload_config):start()
 hs.alert.show("Config loaded")
