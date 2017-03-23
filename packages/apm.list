@@ -10,6 +10,7 @@ language-applescript
 language-c
 language-haskell
 language-haxe
+haxe
 language-latex
 language-lua
 atom-typescript
@@ -21,6 +22,7 @@ autoclose-html
 autocomplete-love
 custom-app-icon
 expand-region
+flow
 highlight-line
 hyperclick
 indent-guide-improved
