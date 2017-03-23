@@ -65,8 +65,6 @@ cask 'paintbrush'
 cask 'adobe-air'
 cask 'hammerspoon'
 cask 'alfred'
-cask 'spectacle'
-cask 'keepingyouawake'
 cask 'flux'
 cask 'mac2imgur'
 cask 'the-unarchiver'
@@ -86,6 +84,7 @@ cask 'java'
 cask 'sourcetree'
 cask 'xquartz'
 cask 'atom'
+cask 'visual-studio-code'
 cask 'docker'
 
 # Game Dev
@@ -111,6 +110,5 @@ cask 'osu'
 
 mas 'Microsoft Remote Desktop', id: 715768417
 mas 'Xcode', id: 497799835
-mas 'Wallpaperer', id: 1102248738
 mas 'Wunderlist', id: 410628904
 mas 'Amphetamine', id: 937984704

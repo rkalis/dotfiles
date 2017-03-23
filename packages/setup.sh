@@ -20,7 +20,12 @@ find * -name "*.list" | while read fn; do
     fi
     while read package; do
         if [[ $package == $COMMENT ]];
-        then continue; else
+        then continue
+        fi
+        if [[ $cmd == code* ]]; then
+            echo "$cmd $package"
+            $cmd $package
+        else
             echo "$cmd install $package"
             $cmd install $package
         fi
