@@ -24,8 +24,6 @@
 ## Customisation
 I strongly encourage you to play around with the configurations, and add or remove features.
 If you would like to use these dotfiles for yourself, I'd recommend changing at least the following:
-#### Atom
-* The `projects.cson` file contains my personal projects, replace these with your own projects
 
 #### Git
 * The .gitconfig file includes my [user] config, replace these with your own user name and email
@@ -34,7 +32,7 @@ If you would like to use these dotfiles for yourself, I'd recommend changing at 
 * At the top of the setup.sh file, my computer name is set, replace this with your own computer name
 
 ####  Packages
-This fodler is a collection of the programs and utilities I use frequently. These lists can easily be amended to your liking.
+This folder is a collection of the programs and utilities I use frequently. These lists can easily be amended to your liking.
 
 #### Repos
 This folder is a collection of my own repos, some of which are even private. The existing lists can easily be edited or replaced by custom lists.
@@ -47,25 +45,15 @@ This folder is a collection of my own repos, some of which are even private. The
 ## Caveats
 
 * I haven't found a way to automate or save Bartender config
-* I haven't found a way to automate or save Spectacle config
 
 ## Contents
 
 ### Root (/)
 * bootstrap.sh - Calls all setup.sh scripts
 
-### Atom (atom/)
-* setup.sh - Symlinks the config files to ~/.atom/
-* config.cson - Atom configuration
-* init.coffee - Atom initiation script
-* keymap.cson - Custom keymaps
-* projects.cson - Project definitions
-* snippets.cson - Custom auto-expanding snippets
-* styles.less - Custom styles
-
 ### User Bin (bin/)
-* setup.sh - Symlinks the other contents of the dotfiles/bin/ folder to ~/bin/
-* togglehidden - A shell script that toggles between showing and hiding hidden
+* setup.sh - Symlinks the other contents of the folder to `~/bin/`
+* togglehidden - A shell script that toggles between showing and hiding hidden 
 files
 * sethidden - A shell script which takes command line arguments to show or hide
 hidden files
@@ -75,11 +63,12 @@ hidden files
 * app.package.id - Contains all extensions for the specified program
 
 ### Fish (fish/)
-* setup.sh - Symlinks all fish files to their corresponding location in ~/.config/fish/
-* config.fish - Adds ~/bin to PATH
+* setup.sh - Symlinks all fish files to their corresponding location in `~/.config/fish/`
+* config.fish - Global fish configuration (.fishrc)
 * completions/
-  * repo.fish - Contains all repos as completions for the repo command
+  * repo.fish - Contains all repos as completions for the `repo` command
 * functions/
+  * abbrex.fish - Utility for expanding abbreviations in fish-scripts
   * clear.fish - Clears the screen and shows fish_greeting
   * emptytrash.fish - Empties trash and clears system logs
   * fish_greeting.fish - My personal fish greeting using the
@@ -87,7 +76,7 @@ hidden files
   * fish_prompt.fish - The Classic + Git prompt from the fish web config
   * ls.fish - Calling ls with parameter --color=auto
   * pubkey.fish - Copies the public key to the clipboard
-  * repo.fish - Finds a repository and jumps to it
+  * repo.fish - Finds a repository in `~/repos` and jumps to it
   * setup.fish - Initial setup for a new fish installation,
   contains abbreviations
   * update.fish - Installs OS X Software Updates, updates Ruby gems, Homebrew,
@@ -95,23 +84,34 @@ hidden files
   * week.fish - Returns the current week number
 
 ### Git (git/)
-* setup.sh - Symlinks all git files to ~/
+* setup.sh - Symlinks all git files to `~/`
 * .gitignore_global - Contains global gitignores, such as OS-specific files and
 several compiled files
 * .gitconfig - Sets several global Git variables
 
 ### Hammerspoon (hammerspoon/)
-* setup.sh - Symlinks all lua and AppleScript files to ~/.hammerspoon/
-* init.lua - Contains the main Hammerspoon config
-* togglevpn.lua - Binds a shortcut to the execution of togglevpn.applescript
+* setup.sh - Symlinks all lua and AppleScript files to `~/.hammerspoon/`
+* init.lua - Contains the main Hammerspoon config, importing the others
+* asim.lua - Utility for using applescript files
+* hyper.lua - Binds the "F18" key to a Hyper mode, which can be used for 
+global commands
+* spectacle.lua - Window and monitor management using hyper mode
+* togglevpn.lua - Binds a shortcut to the execution of `togglevpn.applescript`
 * togglevpn.applescript - Toggles Viscosity vpn connection
 
+### Karabiner (karabiner/)
+* setup.sh - Symlinks Karabiner settings to `~/.config/karabiner`
+* karabiner.json - Binds the CAPS LOCK key to "F18" to use with hammerspoon
+
 ### OS X Preferences (osx/)
-* set_defaults.sh - Executes a long list of commands pertaining to
-OS X Preferences
+* setup.sh - Executes a long list of commands pertaining to macOS Preferences
 
 ### Packages (packages/)
 * setup.sh - Installs the contents of the .list files and the Brewfile
+
+### Python (python/)
+* setup.sh - Creates the conda envs for the .list files, and installs their
+contents to the specific envs
 
 ### Repositories (repos/)
 * setup.sh - Clones the repositories in the .list files at the corresponding
@@ -122,5 +122,13 @@ locations
 verbose way, unlinking the existing file first, might it exist
 
 ### Vim (vim/)
-* setup.sh - Symlinks all vim files to ~/
+* setup.sh - Symlinks all vim files to `~/`
 * .vimrc - Basic Vim configuration
+
+### Visual Studio Code (vscode/)
+* setup.sh - Symlinks the settings.json file to `~/Library/Application Support/Code/User`
+* settings.json - Contains user settings for Visual Studio Code
+
+### Windows (windows/)
+* install_chocolatey.cmd - Installs the Windows chocolatey package manager
+* setup.ps1 - Installs the contents of the `choco.list` file
