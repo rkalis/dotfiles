@@ -8,6 +8,7 @@ tap 'homebrew/php'
 tap 'homebrew/versions'
 tap 'buo/cask-upgrade'
 
+brew 'anaconda'
 brew 'android-sdk'
 brew 'ant'
 brew 'brew-cask-completion'

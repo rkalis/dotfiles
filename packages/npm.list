@@ -2,3 +2,5 @@
 -g ionic
 -g gulp
 -g typescript
+-g eslint
+-g vue-cli

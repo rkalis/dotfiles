@@ -1,6 +1,7 @@
 // Place your settings in this file to overwrite the default settings
 {
     "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "One Monokai",
 
     "editor.rulers": [79],
     "editor.roundedSelection": false,
@@ -13,8 +14,13 @@
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
     "window.zoomLevel": 0,
-    "workbench.colorTheme": "Monokalis",
 
     "python.linting.pylintEnabled": false,
-    "python.linting.pep8Enabled": true
+    "python.linting.pep8Enabled": true,
+
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "vue"
+    ]
 }
