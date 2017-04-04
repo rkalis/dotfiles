@@ -1,3 +1,0 @@
-'atom-text-editor':
-  'alt-up': 'expand-region:expand'
-  'alt-down': 'expand-region:shrink'

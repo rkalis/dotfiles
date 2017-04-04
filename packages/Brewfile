@@ -82,7 +82,6 @@ cask 'iterm2'
 cask 'java'
 cask 'sourcetree'
 cask 'xquartz'
-cask 'atom'
 cask 'visual-studio-code'
 cask 'docker'
 
