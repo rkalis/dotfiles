@@ -13,13 +13,13 @@
   ```
   git clone git@github.com:rkalis/dotfiles.git
   ```
-4. Run the `bootstrap.sh` script
-5. Install missing applications from the internet
+4. Run the `bootstrap.sh` script (or run only specific subfolders `setup.sh` scripts if you don't need everything)
+5. (Optional) Install missing applications from the internet
   * [Popcorn Time](http://popcorn-time.se/)
   * [Pyxel Edit](http://pyxeledit.com/)
   * [UvAVPN](http://student.uva.nl/en/az/content/uvavpn/\download/download-uvavpn-software.html)
-6. Point the Alfred preference sync to the right folder
-7. Point the Microsoft Remote Desktop folder to the right folder
+6. (Optional) Point the Alfred preference sync to the right folder
+7. (Optional) Point the Microsoft Remote Desktop folder to the right folder
 
 ## Customisation
 I strongly encourage you to play around with the configurations, and add or remove features.
