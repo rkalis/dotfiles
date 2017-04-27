@@ -1,9 +1,7 @@
-git@github.com:rkalis/isis-run-config.git
 git@github.com:incodehq/contactapp.git
+git@github.com:incodehq/contactapp.wiki.git
 git@github.com:incodehq/ecpcrm.git
 git@bitbucket.org:incodehq/ecpcrm-drupal.git
 git@github.com:estatio/estatio.git
-git@github.com:incodehq/contactapp.wiki.git
-git@github.com:jcvanderwal/dscm.git
-git@github.com:sginn/inventorious.git
 git@github.com:rkalis/isis.git
+git@github.com:rkalis/isis-run-config.git
