@@ -3,4 +3,6 @@
 -----------------------------------------------
 
 local applescript = import_script("togglevpn.applescript")
-hs.hotkey.bind({"cmd", "shift"}, "E", function() hs.applescript(applescript) end)
+hyper:bind({}, "e", function()
+    hs.applescript(applescript)
+end)

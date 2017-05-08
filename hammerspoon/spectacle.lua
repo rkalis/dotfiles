@@ -19,6 +19,10 @@
 
 hs.window.animationDuration = 0.0
 
+-----------------------------------------------
+-- Functionality
+-----------------------------------------------
+
 local sizes = {2, 3, 3/2}
 local fullScreenSizes = {1, 4/3, 2}
 
@@ -123,6 +127,10 @@ function nextMonitor()
   win:moveToScreen(nextScreen)
 end
 
+-----------------------------------------------
+-- Shortcut bindings
+-----------------------------------------------
+
 hyper:bind({}, "down", function()
   pressed.down = true
   if pressed.up then
@@ -197,4 +205,9 @@ hyper:bind({}, "i", function()
   local screen = win:screen()
   cell = hs.grid.get(win, screen)
   hs.alert.show(cell)
+end)
+
+local applescript = import_script("fullscreen.applescript")
+hyper:bind({}, "return", function()
+    hs.applescript(applescript)
 end)
