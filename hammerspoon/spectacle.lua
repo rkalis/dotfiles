@@ -209,5 +209,5 @@ end)
 
 local applescript = import_script("fullscreen.applescript")
 hyper:bind({}, "return", function()
-    hs.applescript(applescript)
+  hs.applescript(applescript)
 end)

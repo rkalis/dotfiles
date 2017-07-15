@@ -4,5 +4,5 @@
 
 local applescript = import_script("togglevpn.applescript")
 hyper:bind({}, "e", function()
-    hs.applescript(applescript)
+  hs.applescript(applescript)
 end)
