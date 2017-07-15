@@ -40,74 +40,59 @@ brew 'swagger-codegen'
 brew 'wget'
 brew 'valgrind'
 
-
-# Essentials
-cask 'whatsapp'
-cask 'telegram'
-cask 'google-chrome'
-cask 'skype'
-cask 'google-drive'
-cask 'dropbox'
-cask 'transmission'
-cask 'spotify'
-cask 'vlc'
-cask 'microsoft-office'
-
-# Tools
-cask 'dashlane'
-cask 'vmware-fusion'
-
-# Creative
-cask 'blender'
-cask 'paintbrush'
-
-# Utilities
 cask 'adobe-air'
-cask 'hammerspoon'
-cask 'alfred'
-cask 'flux'
-cask 'mac2imgur'
-cask 'the-unarchiver'
-cask 'daisydisk'
 cask 'adobe-reader'
-cask 'cleanmymac'
+cask 'android-studio'
+cask 'alfred'
 cask 'bartender'
-cask 'little-snitch'
-cask 'soulseek'
-cask 'p4merge'
-cask 'karabiner-elements'
-
-# Development
+# cask 'battle-net'
+cask 'blender'
+cask 'citrix-receiver'
+cask 'cleanmymac'
+cask 'daisydisk'
+cask 'dashlane'
+cask 'docker'
+cask 'dropbox'
+cask 'exodus'
+cask 'flux'
+cask 'godot'
+cask 'google-chrome'
+cask 'google-drive'
+cask 'hammerspoon'
 cask 'intellij-idea'
 cask 'iterm2'
 cask 'java'
-cask 'sourcetree'
-cask 'xquartz'
-cask 'visual-studio-code'
-cask 'docker'
-
-# Game Dev
-cask 'love'
-cask 'godot'
-cask 'unity'
-cask 'epic-games-launcher'
-
-# Business
-cask 'citrix-receiver'
-cask 'hipchat'
-cask 'viscosity'
-cask 'teamviewer'
-cask 'real-vnc'
+cask 'karabiner-elements'
 cask 'keepassx'
-
-# Games
-cask 'steam'
-# cask 'battle-net'
+cask 'little-snitch'
 cask 'logitech-gaming-software'
-cask 'osu'
+cask 'love'
+cask 'mac2imgur'
+cask 'microsoft-office'
+cask 'mysqlworkbench'
+cask 'p4merge'
+cask 'paintbrush'
+cask 'postman'
+cask 'real-vnc'
+cask 'skype'
+cask 'soundflower'
+cask 'soulseek'
+cask 'sourcetree'
+cask 'spotify'
+cask 'steam'
+cask 'teamviewer'
+cask 'telegram'
+cask 'the-unarchiver'
+cask 'transmission'
+cask 'unity'
+cask 'viscosity'
+cask 'visual-studio-code'
+cask 'vlc'
+cask 'vmware-fusion'
+cask 'whatsapp'
+cask 'xquartz'
 
-
-mas 'Microsoft Remote Desktop', id: 715768417
-mas 'Xcode', id: 497799835
-mas 'Wunderlist', id: 410628904
 mas 'Amphetamine', id: 937984704
+mas 'Microsoft Remote Desktop', id: 715768417
+mas 'Wunderlist', id: 410628904
+mas 'Xcode', id: 497799835
