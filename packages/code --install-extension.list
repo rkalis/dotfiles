@@ -1,18 +1,24 @@
 # Theme
+lei.theme-chromodynamics
 PKief.material-icon-theme
-AdamCaviness.theme-monokai-dark-soda
+azemoh.one-monokai
 #
 # Languages
-donjayamanne.python
+johnpapa.angular2
+idleberg.applescript
 ms-vscode.cpptools
-keyring.Lua
 TeddyDD.fish
+keyring.Lua
+Angular.ng-template
+donjayamanne.python
+eg2.tslint
 #
 # Extensions
-christian-kohler.path-intellisense
-Zignd.html-css-class-completion
-donjayamanne.githistory
 formulahendry.auto-close-tag
 formulahendry.auto-rename-tag
+CoenraadS.bracket-pair-colorizer
 naumovs.color-highlight
+Zignd.html-css-class-completion
 msjsdiag.debugger-for-chrome
+donjayamanne.githistory
+christian-kohler.path-intellisense
