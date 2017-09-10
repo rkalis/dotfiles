@@ -133,6 +133,7 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
 # Disable shadow in screenshots
 defaults write com.apple.screencapture disable-shadow -bool true
+defaults write com.apple.screencapture location ~/Dropbox/unclutter
 
 # Enable subpixel font rendering on non-Apple LCDs
 defaults write NSGlobalDomain AppleFontSmoothing -int 2
