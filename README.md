@@ -15,7 +15,7 @@
   ```
 4. Run the `bootstrap.sh` script (or run only specific subfolders `setup.sh` scripts if you don't need everything)
 5. (Optional) Install missing applications from the internet
-  * [Popcorn Time](http://popcorn-time.se/)
+  * [Popcorn Time](https://popcorntime.sh/)
   * [Pyxel Edit](http://pyxeledit.com/)
   * [UvAVPN](http://student.uva.nl/en/az/content/uvavpn/\download/download-uvavpn-software.html)
 6. (Optional) Point the Alfred preference sync to the right folder
@@ -37,11 +37,6 @@ This folder is a collection of the programs and utilities I use frequently. Thes
 #### Repos
 This folder is a collection of my own repos, some of which are even private. The existing lists can easily be edited or replaced by custom lists.
 
-## To Do
-
-* Automatically setup my apache web server configuration
-* ...
-
 ## Caveats
 
 * I haven't found a way to automate or save Bartender config
@@ -53,7 +48,7 @@ This folder is a collection of my own repos, some of which are even private. The
 
 ### User Bin (bin/)
 * setup.sh - Symlinks the other contents of the folder to `~/bin/`
-* togglehidden - A shell script that toggles between showing and hiding hidden 
+* togglehidden - A shell script that toggles between showing and hiding hidden
 files
 * sethidden - A shell script which takes command line arguments to show or hide
 hidden files
@@ -93,7 +88,7 @@ several compiled files
 * setup.sh - Symlinks all lua and AppleScript files to `~/.hammerspoon/`
 * init.lua - Contains the main Hammerspoon config, importing the others
 * asim.lua - Utility for using applescript files
-* hyper.lua - Binds the "F18" key to a Hyper mode, which can be used for 
+* hyper.lua - Binds the "F18" key to a Hyper mode, which can be used for
 global commands
 * spectacle.lua - Window and monitor management using hyper mode
 * togglevpn.lua - Binds a shortcut to the execution of `togglevpn.applescript`
@@ -103,7 +98,7 @@ global commands
 * setup.sh - Symlinks Karabiner settings to `~/.config/karabiner`
 * karabiner.json - Binds the CAPS LOCK key to "F18" to use with hammerspoon
 
-### OS X Preferences (osx/)
+### OS X Preferences (macos/)
 * setup.sh - Executes a long list of commands pertaining to macOS Preferences
 
 ### Packages (packages/)
