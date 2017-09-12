@@ -1,7 +1,0 @@
--g cordova
--g eslint
--g gulp
--g ionic
--g tslint
--g typescript
--g vue-cli
