@@ -1,7 +1,8 @@
 # Dotfiles
 
 ## Usage
-1. Copy your saved ssh keys to ~/.ssh/
+1. Restore your safely backed up ssh keys to ~/.shh/
+    1. Alternatively, generate new ssh keys, and add these to your GitHub account
 2. Install Homebrew and git
 
   ```bash
@@ -13,11 +14,12 @@
   ```
   git clone git@github.com:rkalis/dotfiles.git
   ```
-4. Run the `bootstrap.sh` script (or run only specific subfolders `setup.sh` scripts if you don't need everything)
+4. Run the `bootstrap.sh` script
+    1. Alternatively, only run the `setup.sh` scripts in specific subfolders if you don't need everything
 5. (Optional) Install missing applications from the internet
   * [Popcorn Time](https://popcorntime.sh/)
   * [Pyxel Edit](http://pyxeledit.com/)
-  * [UvAVPN](http://student.uva.nl/en/az/content/uvavpn/\download/download-uvavpn-software.html)
+  * [UvAVPN](http://student.uva.nl/en/content/az/uvavpn/download/download-uvavpn-software.html)
 6. (Optional) Point the Alfred preference sync to the right folder
 7. (Optional) Point the Microsoft Remote Desktop folder to the right folder
 
@@ -48,10 +50,11 @@ This folder is a collection of my own repos, some of which are even private. The
 
 ### User Bin (bin/)
 * setup.sh - Symlinks the other contents of the folder to `~/bin/`
-* togglehidden - A shell script that toggles between showing and hiding hidden
-files
+* imgcat - A utility to display images inline in iTerm 2
 * sethidden - A shell script which takes command line arguments to show or hide
 hidden files
+* togglehidden - A shell script that toggles between showing and hiding hidden
+files
 
 ### Duti (duti/)
 * setup.sh - Sets the defaults set up in the different files
@@ -69,6 +72,7 @@ hidden files
   * fish_greeting.fish - My personal fish greeting using the
   full-colour fish logo
   * fish_prompt.fish - The Classic + Git prompt from the fish web config
+  * forrepos.fish - Executes a passed command for all repos in `~/repos`
   * ls.fish - Calling ls with parameter --color=auto
   * pubkey.fish - Copies the public key to the clipboard
   * repo.fish - Finds a repository in `~/repos` and jumps to it
@@ -88,17 +92,18 @@ several compiled files
 * setup.sh - Symlinks all lua and AppleScript files to `~/.hammerspoon/`
 * init.lua - Contains the main Hammerspoon config, importing the others
 * asim.lua - Utility for using applescript files
+* fullscreen.applescript - Toggles Fullscreen for the current application
 * hyper.lua - Binds the "F18" key to a Hyper mode, which can be used for
 global commands
 * spectacle.lua - Window and monitor management using hyper mode
-* togglevpn.lua - Binds a shortcut to the execution of `togglevpn.applescript`
 * togglevpn.applescript - Toggles Viscosity vpn connection
+* togglevpn.lua - Binds a shortcut to the execution of `togglevpn.applescript`
 
 ### Karabiner (karabiner/)
 * setup.sh - Symlinks Karabiner settings to `~/.config/karabiner`
 * karabiner.json - Binds the CAPS LOCK key to "F18" to use with hammerspoon
 
-### OS X Preferences (macos/)
+### macOS Preferences (macos/)
 * setup.sh - Executes a long list of commands pertaining to macOS Preferences
 
 ### Packages (packages/)
@@ -123,7 +128,3 @@ verbose way, unlinking the existing file first, might it exist
 ### Visual Studio Code (vscode/)
 * setup.sh - Symlinks the settings.json file to `~/Library/Application Support/Code/User`
 * settings.json - Contains user settings for Visual Studio Code
-
-### Windows (windows/)
-* install_chocolatey.cmd - Installs the Windows chocolatey package manager
-* setup.ps1 - Installs the contents of the `choco.list` file
