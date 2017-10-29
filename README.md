@@ -1,5 +1,7 @@
 # Dotfiles
 
+Read about dotfiles in [my blog post](https://blog.kalis.me/dotfiles-automating-macos-system-configuration/)!
+
 ## Usage
 1. Restore your safely backed up ssh keys to ~/.shh/
     1. Alternatively, generate new ssh keys, and add these to your GitHub account
