@@ -1,6 +1,8 @@
 # Dotfiles
 
-Read about dotfiles in [my blog post](https://blog.kalis.me/dotfiles-automating-macos-system-configuration/)!
+For more information about dotfiles, I wrote these articles on my blog:
+* [Dotfiles: automating macOS system configuration](https://blog.kalis.me/dotfiles-automating-macos-system-configuration/)
+* [Increasing development productivity with repository management](https://blog.kalis.me/increasing-development-productivity-repository-management/)
 
 ## Usage
 1. Restore your safely backed up ssh keys to ~/.shh/
