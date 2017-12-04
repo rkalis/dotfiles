@@ -3,9 +3,6 @@
 ## General
 Hyper + R --> Reload Config
 
-## VPN
-Hyper + E --> Toggle VPN connection
-
 ## Window management
 Hyper + F --> Next fullscreen step
 Hyper + ⏎ --> Toggle Full Screen
@@ -19,3 +16,8 @@ Hyper + ↓ --> Next down step
 Hyper + CMD + → --> Next Monitor
 Hyper + CMD + ← --> Previous Monitor
 
+## VPN
+Hyper + E --> Toggle VPN connection
+
+## Apps
+Hyper + U --> Open Unclutter panel

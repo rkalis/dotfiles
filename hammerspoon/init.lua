@@ -2,6 +2,7 @@ require "asim"
 require "hyper"
 require "togglevpn"
 require "spectacle"
+require "shortcuts"
 
 -----------------------------------------------
 -- Reload config on write
