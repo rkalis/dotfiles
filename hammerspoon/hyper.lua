@@ -12,7 +12,7 @@ function enterHyperMode()
 end
 
 -- Leave Hyper Mode when F18 (Hyper/Capslock) is pressed,
---   send ESCAPE if no other keys are pressed.
+-- send ESCAPE if no other keys are pressed.
 function exitHyperMode()
   hyper:exit()
   if not hyper.triggered then
