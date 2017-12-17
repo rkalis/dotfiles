@@ -12,8 +12,9 @@ find * -name "*.list" | while read fn; do
     while read repo; do
         if [[ $repo == $COMMENT ]];
         then continue; else
-            repo_name=$(basename $repo .git)
-            git clone $repo "$REPO_PATH/$folder/$repo_name"
+            pushd "$REPO_PATH/$folder"
+            git clone $repo
+            popd
         fi
     done < "$fn"
 done
