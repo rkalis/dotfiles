@@ -3,14 +3,15 @@
 DIR=$(dirname "$0")
 cd "$DIR"
 
-. ../scripts/symlink.sh
+. ../scripts/functions.sh
 
 SOURCE="$(realpath .)"
 DESTINATION="$(realpath ~)"
 
-echo "Source path:\t\t $SOURCE"
-echo "Destination path:\t $DESTINATION"
+info "Setting up Vim..."
 
 find . -name ".vim*" | while read fn; do
     symlink "$SOURCE/$fn" "$DESTINATION/$fn"
 done
+
+success "Finished setting up Vim."

@@ -122,8 +122,8 @@ contents to the specific envs
 locations
 
 ### Helper Scripts (scripts/)
-* symlink.sh - Symlinks a file from a source path to a destination path in a
-verbose way, unlinking the existing file first, might it exist
+* functions.sh - Contains helper functions for symlinking files and printing
+  progress messages
 
 ### Vim (vim/)
 * setup.sh - Symlinks all vim files to `~/`

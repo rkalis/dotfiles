@@ -4,6 +4,13 @@
 # ~/.osx — https://mths.be/osx
 # Amended to work for my personal preferences
 
+DIR=$(dirname "$0")
+cd "$DIR"
+
+. ../scripts/functions.sh
+
+info "Setting macOS defaults..."
+
 # Ask for the administrator password upfront
 sudo -v
 
@@ -409,4 +416,4 @@ defaults write com.google.Chrome.canary DisablePrintPreview -bool true
 defaults write com.google.Chrome PMPrintingExpandedStateForPrint2 -bool true
 defaults write com.google.Chrome.canary PMPrintingExpandedStateForPrint2 -bool true
 
-echo "Done. Note that some of these changes require a logout/restart to take effect."
+success "FInished setting macOS defaults. Note that some of these changes require a logout/restart to take effect."
