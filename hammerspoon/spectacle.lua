@@ -141,6 +141,7 @@ hyper:bind({}, "down", function()
       cell.h = GRID.h / nextSize
     end)
   end
+  hyper.triggered = true
 end, function()
   pressed.down = false
 end)
@@ -155,6 +156,7 @@ hyper:bind({}, "right", function()
       cell.w = GRID.w / nextSize
     end)
   end
+  hyper.triggered = true
 end, function()
   pressed.right = false
 end)
@@ -169,6 +171,7 @@ hyper:bind({}, "left", function()
       cell.w = GRID.w / nextSize
     end)
   end
+  hyper.triggered = true
 end, function()
   pressed.left = false
 end)
@@ -183,20 +186,24 @@ hyper:bind({}, "up", function()
       cell.h = GRID.h / nextSize
     end)
   end
+  hyper.triggered = true
 end, function ()
   pressed.up = false
 end)
 
 hyper:bind({}, "f", function()
   nextFullScreenStep()
+  hyper.triggered = true
 end)
 
 hyper:bind({"cmd"}, "left", function()
   prevMonitor()
+  hyper.triggered = true
 end)
 
 hyper:bind({"cmd"}, "right", function()
   nextMonitor()
+  hyper.triggered = true
 end)
 
 hyper:bind({}, "i", function()
@@ -205,9 +212,12 @@ hyper:bind({}, "i", function()
   local screen = win:screen()
   cell = hs.grid.get(win, screen)
   hs.alert.show(cell)
+  hyper.triggered = true
 end)
 
-local applescript = import_script("fullscreen.applescript")
 hyper:bind({}, "return", function()
-  hs.applescript(applescript)
+  local win = hs.window.frontmostWindow()
+  win:setFullscreen(not win:isFullscreen())
+  hyper.triggered = true
 end)
+

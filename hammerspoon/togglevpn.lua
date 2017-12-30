@@ -2,7 +2,7 @@
 -- Connect to vpn with Viscosity
 -----------------------------------------------
 
-local applescript = import_script("togglevpn.applescript")
 hyper:bind({}, "e", function()
-  hs.applescript(applescript)
+  status = hs.osascript.applescriptFromFile("togglevpn.applescript")
+  hyper.triggered = true
 end)
