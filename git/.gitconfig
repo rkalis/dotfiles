@@ -13,6 +13,7 @@
 	default = simple
 [alias]
 	unstage = reset HEAD --
+	uncommit = reset HEAD~
 	rb = "!f() { \
 	    echo fetching...; \
 	    git fetch; \
