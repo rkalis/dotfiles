@@ -131,8 +131,8 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 # defaults write com.apple.screensaver askForPassword -int 1
 # defaults write com.apple.screensaver askForPasswordDelay -int 0
 
-# Disable shadow in screenshots
-defaults write com.apple.screencapture disable-shadow -bool true
+# Enable shadow in screenshots
+defaults write com.apple.screencapture disable-shadow -bool false
 defaults write com.apple.screencapture location ~/Dropbox/unclutter
 
 # Enable subpixel font rendering on non-Apple LCDs
