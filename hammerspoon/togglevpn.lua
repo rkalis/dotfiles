@@ -3,6 +3,6 @@
 -----------------------------------------------
 
 hyper:bind({}, "e", function()
-  status = hs.osascript.applescriptFromFile("togglevpn.applescript")
+  hs.osascript.applescriptFromFile("togglevpn.applescript")
   hyper.triggered = true
 end)

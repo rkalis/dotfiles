@@ -1,4 +1,10 @@
--- Copyright (c) 2016 Miro Mannino
+-- Original Work Copyright (c) 2016 Miro Mannino
+-- Modified Work Copyright (c) 2017 Rosco kalis
+--   Modifications:
+-- - Made original functionality work with Hyper Mode
+-- - Added next/previous monitor functionality
+-- - Added Fullscreen toggle functionality
+
 -- Permission is hereby granted, free of charge, to any person obtaining a copy of this
 -- software and associated documentation files (the "Software"), to deal in the Software
 -- without restriction, including without limitation the rights to use, copy, modify, merge,
@@ -14,8 +20,6 @@
 -- FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
 -- OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 -- DEALINGS IN THE SOFTWARE.
-
--- Edited for use with hyper mode, as well as monitor management
 
 hs.window.animationDuration = 0.0
 

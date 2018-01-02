@@ -1,14 +1,15 @@
 require "hyper"
+require "caffeinate"
+require "minimising"
 require "togglevpn"
 require "spectacle"
 require "shortcuts"
-require "minimising"
 
 -----------------------------------------------
 -- Reload config on write
 -----------------------------------------------
 function reload_config(files)
-    hs.reload()
+  hs.reload()
 end
 
 hyper:bind({}, "r", function()
