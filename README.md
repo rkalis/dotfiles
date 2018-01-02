@@ -5,7 +5,7 @@ For more information about dotfiles, I wrote these articles on my blog:
 * [Increasing development productivity with repository management](https://blog.kalis.me/increasing-development-productivity-repository-management/)
 
 ## Usage
-1. Restore your safely backed up ssh keys to ~/.shh/
+1. Restore your safely backed up ssh keys to `~/.ssh/`
     1. Alternatively, generate new ssh keys, and add these to your GitHub account
 2. Install Homebrew and git
 
@@ -44,8 +44,8 @@ This folder is a collection of the programs and utilities I use frequently. Thes
 This folder is a collection of my own repos, some of which are even private. The existing lists can easily be edited or replaced by custom lists.
 
 ## Caveats
-
 * I haven't found a way to automate or save Bartender config
+* Python setup is not really working well, perhaps I will go back to using pip instead of anaconda
 
 ## Contents
 
