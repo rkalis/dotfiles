@@ -1,0 +1,17 @@
+name: root
+channels:
+- defaults
+dependencies:
+- jupyter
+- numpy
+- matplotlib
+- pandas
+- pep8
+- pymongo
+- python=3.6
+- requests
+- scikit-learn
+- scipy
+- sqlite
+- pip
+prefix: /usr/local/miniconda3

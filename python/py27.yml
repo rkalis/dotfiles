@@ -1,0 +1,16 @@
+name: py27
+channels:
+- defaults
+dependencies:
+- jupyter
+- numpy
+- matplotlib
+- pandas
+- pep8
+- pymongo
+- python=2.7
+- requests
+- scikit-learn
+- scipy
+- sqlite
+- pip

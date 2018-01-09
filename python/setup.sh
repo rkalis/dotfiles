@@ -3,23 +3,26 @@
 DIR=$(dirname "$0")
 cd "$DIR"
 
+. ../scripts/functions.sh
+
 COMMENT=\#*
 
-find * -name "*.list" | while read fn; do
-    envspec="${fn%.*}"
-    envarray=($envspec)
-    envname=${envarray[0]}
-    echo "conda create -n $envspec"
-    conda create -n $envspec
-    echo "conda activate $envname"
-    conda activate $envname
-    while read package; do
-        if [[ $package == $COMMENT ]];
-        then continue
+info "Setting up Conda environments..."
+
+find * -name "*.yml" | while read fn; do
+    envname="${fn%.*}"
+    substep_info "Creating $envname environment..."
+    if conda env create -f $fn &>/dev/null; then
+        substep_success "Created $envname environment."
+    else
+        substep_success "Environment already exists."
+        substep_info "Updating $envname environment..."
+        if conda env update -f $fn &>/dev/null; then
+            substep_success "Updated $envname environment."
+        else
+            substep_error "Failed updating $envname environment."
         fi
-        echo "conda install $package"
-        conda install $package
-    done < "$fn"
-    echo "conda deactivate $envname"
-    conda deactivate $envname
+    fi
 done
+
+success "Finished setting up Conda environments."
