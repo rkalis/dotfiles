@@ -15,7 +15,9 @@ else
 fi
 
 info "Installing XCode command line tools..."
-if xcode-select --install; then
+if xcode-select --print-path &>/dev/null; then
+    success "XCode command line tools already installed."
+elif xcode-select --install &>/dev/null; then
     success "Finished installing XCode command line tools."
 else
     error "Failed to install XCode command line tools."
