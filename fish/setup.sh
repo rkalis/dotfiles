@@ -18,7 +18,7 @@ find * -name "*.fish" | while read fn; do
     symlink "$SOURCE/$fn" "$DESTINATION/$fn"
 done
 
-function set_fish_shell() {
+set_fish_shell() {
     if grep --quiet fish <<< "$SHELL"; then
         success "Fish shell is already set up."
     else

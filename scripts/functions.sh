@@ -1,6 +1,6 @@
 #! /usr/bin/env sh
 
-function symlink {
+symlink() {
     OVERWRITTEN=""
     if [ -e "$2" ] || [ -h "$2" ]; then
         OVERWRITTEN="(Overwritten)"
@@ -16,7 +16,7 @@ function symlink {
 }
 
 # Took these printing functions from https://github.com/Sajjadhosn/dotfiles
-function coloredEcho {
+coloredEcho() {
     local exp="$1";
     local color="$2";
     local arrow="$3";
@@ -38,26 +38,26 @@ function coloredEcho {
     tput sgr0;
 }
 
-function info {
+info() {
     coloredEcho "$1" blue "========>"
 }
 
-function success {
+success() {
     coloredEcho "$1" green "========>"
 }
 
-function error {
+error() {
     coloredEcho "$1" red "========>"
 }
 
-function substep_info {
+substep_info() {
     coloredEcho "$1" magenta "===="
 }
 
-function substep_success {
+substep_success() {
     coloredEcho "$1" cyan "===="
 }
 
-function substep_error {
+substep_error() {
     coloredEcho "$1" red "===="
 }
