@@ -11,7 +11,7 @@ For more information about dotfiles, I wrote these articles on my blog:
 2. Install Homebrew and git
 
   ```bash
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   brew install git
   ```
 3. Clone this repository
@@ -44,10 +44,6 @@ This folder is a collection of the programs and utilities I use frequently. Thes
 #### Repos
 This folder is a collection of my own repos, some of which are even private. The existing lists can easily be edited or replaced by custom lists.
 
-## Caveats
-* I haven't found a way to automate or save Bartender config
-* Python setup is not really working well, perhaps I will go back to using pip instead of anaconda
-
 ## Contents
 
 ### Root (/)
@@ -69,7 +65,9 @@ files
 * setup.sh - Symlinks all fish files to their corresponding location in `~/.config/fish/`
 * config.fish - Global fish configuration (.fishrc)
 * completions/
+  * conda.fish - Contains completions to all `conda` commands
   * repo.fish - Contains all repos as completions for the `repo` command
+  * repodir.fish - Contains all repos as completions for the `repodir` command
 * functions/
   * abbrex.fish - Utility for expanding abbreviations in fish-scripts
   * clear.fish - Clears the screen and shows fish_greeting
@@ -81,6 +79,7 @@ files
   * ls.fish - Calling ls with parameter --color=auto
   * pubkey.fish - Copies the public key to the clipboard
   * repo.fish - Finds a repository in `~/repos` and jumps to it
+  * repodir.fish - Finds a repository in `~/repos` and prints its path
   * setup.fish - Initial setup for a new fish installation,
   contains abbreviations
   * update.fish - Installs OS X Software Updates, updates Ruby gems, Homebrew,
@@ -96,10 +95,11 @@ several compiled files
 ### Hammerspoon (hammerspoon/)
 * setup.sh - Symlinks all lua and AppleScript files to `~/.hammerspoon/`
 * init.lua - Contains the main Hammerspoon config, importing the others
-* asim.lua - Utility for using applescript files
-* fullscreen.applescript - Toggles Fullscreen for the current application
+* caffeinate.lua - Shortcuts for managing screen state (locking, etc.)
 * hyper.lua - Binds the "F18" key to a Hyper mode, which can be used for
 global commands
+* minimising.lua - Shortcuts for minimising and unminimising windows
+* shortcuts.lua - Hyper key bindings to existing shortcuts
 * spectacle.lua - Window and monitor management using hyper mode
 * togglevpn.applescript - Toggles Viscosity vpn connection
 * togglevpn.lua - Binds a shortcut to the execution of `togglevpn.applescript`
@@ -115,8 +115,7 @@ global commands
 * setup.sh - Installs the contents of the .list files and the Brewfile
 
 ### Python (python/)
-* setup.sh - Creates the conda envs for the .list files, and installs their
-contents to the specific envs
+* setup.sh - Creates the conda envs for the environment.yml files
 
 ### Repositories (repos/)
 * setup.sh - Clones the repositories in the .list files at the corresponding
