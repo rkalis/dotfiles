@@ -13,7 +13,7 @@ info "Setting up Hammerspoon..."
 substep_info "Creating Hammerspoon folder..."
 mkdir -p $DESTINATION
 
-find * -name "*.lua" -o -name "*.applescript" | while read fn; do
+find * -name "*.lua" -o -name "*.applescript" -o -name "*.js" | while read fn; do
     symlink "$SOURCE/$fn" "$DESTINATION/$fn"
 done
 
