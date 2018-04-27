@@ -1,6 +1,7 @@
 name: py27
 channels:
 - defaults
+- conda-forge
 dependencies:
 - jupyter
 - numpy

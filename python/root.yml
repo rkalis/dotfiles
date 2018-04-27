@@ -1,6 +1,7 @@
 name: root
 channels:
 - defaults
+- conda-forge
 dependencies:
 - jupyter
 - numpy
