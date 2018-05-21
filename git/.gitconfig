@@ -6,7 +6,7 @@
 	editor = /usr/bin/vim
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 [mergetool "sourcetree"]
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
@@ -14,7 +14,7 @@
 	default = simple
 [alias]
 	unstage = reset HEAD --
-	uncommit = reset HEAD~
+	uncommit = reset --soft HEAD~
 	rb = "!f() { \
 	    echo fetching...; \
 	    git fetch; \
