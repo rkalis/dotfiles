@@ -16,5 +16,6 @@ mkdir -p "$DESTINATION"
 find * -not -name "setup.sh" -type f | while read fn; do
     symlink "$SOURCE/$fn" "$DESTINATION/$fn"
 done
+clear_broken_symlinks "$DESTINATION"
 
 success "Finished setting up user bin."

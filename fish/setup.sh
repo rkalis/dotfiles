@@ -17,6 +17,7 @@ mkdir -p "$DESTINATION/completions"
 find * -name "*.fish" | while read fn; do
     symlink "$SOURCE/$fn" "$DESTINATION/$fn"
 done
+clear_broken_symlinks "$DESTINATION"
 
 set_fish_shell() {
     if grep --quiet fish <<< "$SHELL"; then

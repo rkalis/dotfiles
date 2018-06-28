@@ -15,6 +15,16 @@ symlink() {
     fi
 }
 
+clear_broken_symlinks() {
+    find -L "$1" -type l | while read fn; do
+        if rm "$fn"; then
+            substep_success "Removed broken symlink at $fn."
+        else
+            substep_error "Failed to remove broken symlink at $fn."
+        fi
+    done
+}
+
 # Took these printing functions from https://github.com/Sajjadhosn/dotfiles
 coloredEcho() {
     local exp="$1";

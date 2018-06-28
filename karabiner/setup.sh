@@ -16,5 +16,6 @@ mkdir -p $DESTINATION
 find * -name "*.json" | while read fn; do
     symlink "$SOURCE/$fn" "$DESTINATION/$fn"
 done
+clear_broken_symlinks "$DESTINATION"
 
 success "Finished setting up Karabiner Elements."
