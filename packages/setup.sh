@@ -22,11 +22,7 @@ find * -name "*.list" | while read fn; do
         then continue
         fi
         substep_info "Installing $package..."
-        if [[ $cmd == code* ]]; then
-            $cmd $package
-        else
-            $cmd install $package
-        fi
+        $cmd $package
     done < "$fn"
     success "Finished installing $1 packages."
 done
