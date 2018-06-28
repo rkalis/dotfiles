@@ -1,5 +1,8 @@
 ## Defines abbreviations
 function setup
+    for abbreviation in (abbr -l)
+        abbr -e $abbreviation
+    end
     abbr mci mvn clean install
     abbr g git
     abbr gf git fetch
@@ -12,4 +15,6 @@ function setup
     abbr gd git diff
     abbr gco git checkout
     abbr ll ls -lhA
+    abbr bs brew services
+    fisher
 end
