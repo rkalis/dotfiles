@@ -1,4 +1,4 @@
 hyper:bind({}, "l", function()
-  hs.caffeinate.lockScreen()
+  hs.caffeinate.startScreensaver()
   hyper.triggered = true
 end)
