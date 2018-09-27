@@ -1,9 +1,9 @@
 # Dotfiles
 
 For more information about dotfiles, I wrote these articles on my blog:
-* [Dotfiles: automating macOS system configuration](https://blog.kalis.me/dotfiles-automating-macos-system-configuration/)
-* [Increasing development productivity with repository management](https://blog.kalis.me/increasing-development-productivity-repository-management/)
-* [Set up a Hyper Key with Hammerspoon on macOS](https://blog.kalis.me/setup-hyper-key-hammerspoon-macos/)
+* [Dotfiles: automating macOS system configuration](https://kalis.me/dotfiles-automating-macos-system-configuration/)
+* [Increasing development productivity with repository management](https://kalis.me/increasing-development-productivity-repository-management/)
+* [Set up a Hyper Key with Hammerspoon on macOS](https://kalis.me/setup-hyper-key-hammerspoon-macos/)
 
 ## Usage
 1. Restore your safely backed up ssh keys to `~/.ssh/`
