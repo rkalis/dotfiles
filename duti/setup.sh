@@ -7,7 +7,7 @@ cd "$DIR"
 
 info "Setting default applications using duti..."
 
-find * -not -name "setup.sh" -type f | while read fn; do
+find * -not -name "$(basename ${0})" -type f | while read fn; do
     while read ext; do
         substep_info "Setting default application for extension $ext to $fn..."
         duti -s $fn $ext all
