@@ -13,7 +13,7 @@ info "Setting up user bin..."
 substep_info "Creating user bin folder..."
 mkdir -p "$DESTINATION"
 
-find * -not -name "setup.sh" -type f | while read fn; do
+find * -not -name "$(basename ${0})" -type f | while read fn; do
     symlink "$SOURCE/$fn" "$DESTINATION/$fn"
 done
 clear_broken_symlinks "$DESTINATION"
