@@ -2,6 +2,7 @@
 .cpp
 .h
 .hpp
+.hs
 .js
 .py
 .sh
@@ -9,3 +10,4 @@
 .list
 .lua
 .applescript
+.bib
