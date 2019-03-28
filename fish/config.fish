@@ -14,10 +14,7 @@ set -x -g PATH (brew --prefix findutils)/libexec/gnubin $PATH
 # set -x -g MANPATH (brew --prefix findutils)/libexec/gnuman $MANPATH
 
 # User bin folder
-set -x -g PATH ~/bin $PATH /usr/local/sbin
+set -x -g PATH ~/bin ~/.local/bin $PATH /usr/local/sbin
 
 # Composer
 set -x -g PATH ~/.composer/vendor/bin $PATH
-
-# Pipenv completions
-eval (pipenv --completion)
