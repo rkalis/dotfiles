@@ -17,6 +17,7 @@
 
     "python.linting.pylintEnabled": true,
     "python.linting.pep8Enabled": false,
+    "python.pythonPath": "/usr/local/bin/python3",
 
     "eslint.validate": [
         "javascript",
@@ -36,5 +37,14 @@
         "editor.tabSize": 2
     },
     "git.autofetch": true,
-    "terminal.integrated.rendererType": "dom"
+    "terminal.integrated.rendererType": "dom",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "gitlens.advanced.messages": {
+        "suppressShowKeyBindingsNotice": true
+    },
+    "gitlens.keymap": "alternate",
+    "clang.cxxflags": "-std=c++11",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
 }
