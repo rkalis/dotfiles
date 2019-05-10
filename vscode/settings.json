@@ -10,6 +10,8 @@
     "editor.minimap.maxColumn": 100,
     "editor.renderWhitespace": "boundary",
     "editor.renderIndentGuides": true,
+    "editor.suggestSelection": "first",
+    // "editor.fontWeight": "600",
 
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
@@ -22,6 +24,8 @@
     "eslint.validate": [
         "javascript",
         "javascriptreact",
+        "typescript",
+        "typescriptreact",
         "vue"
     ],
 
@@ -36,15 +40,19 @@
     "[html]": {
         "editor.tabSize": 2
     },
+
     "git.autofetch": true,
     "terminal.integrated.rendererType": "dom",
     "typescript.updateImportsOnFileMove.enabled": "always",
+    "javascript.updateImportsOnFileMove.enabled": "always",
     "gitlens.advanced.messages": {
         "suppressShowKeyBindingsNotice": true
     },
     "gitlens.keymap": "alternate",
-    "clang.cxxflags": "-std=c++11",
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
+    "clang.cxxflags": ["-std=c++11"],
+    "workbench.settings.editor": "json",
+    "workbench.settings.useSplitJSON": true,
+    "files.associations": {
+        "*.cash": "solidity"
+    },
 }
