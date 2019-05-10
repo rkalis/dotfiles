@@ -5,7 +5,7 @@ tell application "System Events"
         tell btMenu
             click
             try
-                tell (menu item "WH-1000XM3" of menu 1)
+                tell (menu item "Rosco's Headphones" of menu 1)
                     click
                     if exists menu item "Connect" of menu 1 then
                         click menu item "Connect" of menu 1
