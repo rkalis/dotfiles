@@ -18,3 +18,6 @@ set -x -g PATH ~/bin ~/.local/bin $PATH /usr/local/sbin
 
 # Composer
 set -x -g PATH ~/.composer/vendor/bin $PATH
+
+# fnm
+fnm env --multi | source
