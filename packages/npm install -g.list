@@ -1,8 +1,15 @@
+npm
+angular-cli
 artillery
 cordova
 eslint
+ethereum-bridge
+ganache-cli
+ghost-cli
 gulp
 ionic
-tslint
+mocha
+parcel-bundler
+truffle
 typescript
-vue-cli
+yarn

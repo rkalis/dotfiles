@@ -1,29 +1,34 @@
 # Theme
 PKief.material-icon-theme
 azemoh.one-monokai
-lei.theme-chromodynamics
 #
 # Languages
 Angular.ng-template
-TeddyDD.fish
 dbaeumer.vscode-eslint
-eg2.tslint
+fivethree.vscode-ionic-snippets
 idleberg.applescript
 joaompinto.asciidoctor-vscode
 johnpapa.Angular2
+JuanBlanco.solidity
+justusadam.language-haskell
+lextudio.restructuredtext
+lunaryorn.hlint
+mike-lischke.vscode-antlr4
+mikestead.dotenv
+mitaki28.vscode-clang
 ms-python.python
 ms-vscode.cpptools
-octref.vetur
 pixelbyte-studios.pixelbyte-love2d
+skyapps.fish-vscode
 trixnz.vscode-lua
+UCL.haskelly
 #
 # Extensions
-CoenraadS.bracket-pair-colorizer
-Zignd.html-css-class-completion
 christian-kohler.path-intellisense
-donjayamanne.githistory
-formulahendry.auto-close-tag
-formulahendry.auto-rename-tag
+CoenraadS.bracket-pair-colorizer
+eamodio.gitlens
+EditorConfig.EditorConfig
 msjsdiag.debugger-for-chrome
 naumovs.color-highlight
-steoates.autoimport
+PeterJausovec.vscode-docker
+vincaslt.highlight-matching-tag
