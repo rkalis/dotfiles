@@ -7,8 +7,6 @@ git@github.com:incodehq/ecpcrm-canonical.git
 git@bitbucket.org:incodehq/ecphrm.git
 git@github.com:estatio/estatio.git
 git@github.com:incodehq/estatio-canonical.git
-git@github.com:rkalis/isis.git
-git@github.com:rkalis/isis-run-config.git
+git@github.com:apache/isis.git
 git@github.com:incodehq/relatio.git
 git@github.com:incodehq/relatio-camel.git
-git@bitbucket.org:incodehq/stack.git
