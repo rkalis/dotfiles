@@ -7,18 +7,21 @@
 ## Window management
 * Hyper + F --> Next fullscreen step
 * Hyper + ⏎ --> Toggle Full Screen
-* Hyper + I --> Show
+* Hyper + I --> Show window information
 * Hyper + → --> Next right step
 * Hyper + ← --> Next left step
 * Hyper + ↑ --> Next up step
 * Hyper + ↓ --> Next down step
+* Hyper + M --> Minimise window
+* Hyper + ⌥ + M --> Unminimise last minimised window
 
 ## Monitor management
 * Hyper + ⌘ + → --> Next Monitor
 * Hyper + ⌘ + ← --> Previous Monitor
 
 ## VPN
-* Hyper + E --> Toggle VPN connection
+* Hyper + E --> Toggle Viscosity VPN connection
 
-## Apps
-* Hyper + U --> Open Unclutter panel
+## Bluetooth
+* Hyper + B --> Toggle bluetooth
+* Hyper + ⌘ + B --> Toggle bluetooth headphone connection
