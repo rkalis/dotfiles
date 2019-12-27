@@ -1,10 +1,10 @@
-# Theme
-PKief.material-icon-theme
-azemoh.one-monokai
-#
-# Languages
 Angular.ng-template
+azemoh.one-monokai
+christian-kohler.path-intellisense
+CoenraadS.bracket-pair-colorizer
 dbaeumer.vscode-eslint
+eamodio.gitlens
+EditorConfig.EditorConfig
 fivethree.vscode-ionic-snippets
 idleberg.applescript
 joaompinto.asciidoctor-vscode
@@ -12,23 +12,17 @@ johnpapa.Angular2
 JuanBlanco.solidity
 justusadam.language-haskell
 lextudio.restructuredtext
-lunaryorn.hlint
 mike-lischke.vscode-antlr4
 mikestead.dotenv
 mitaki28.vscode-clang
+ms-azuretools.vscode-docker
 ms-python.python
 ms-vscode.cpptools
+msjsdiag.debugger-for-chrome
+naumovs.color-highlight
 pixelbyte-studios.pixelbyte-love2d
+PKief.material-icon-theme
 skyapps.fish-vscode
 trixnz.vscode-lua
 UCL.haskelly
-#
-# Extensions
-christian-kohler.path-intellisense
-CoenraadS.bracket-pair-colorizer
-eamodio.gitlens
-EditorConfig.EditorConfig
-msjsdiag.debugger-for-chrome
-naumovs.color-highlight
-PeterJausovec.vscode-docker
 vincaslt.highlight-matching-tag

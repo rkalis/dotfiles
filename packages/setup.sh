@@ -13,8 +13,8 @@ info "Installing Brewfile packages..."
 brew bundle
 success "Finished installing Brewfile packages."
 
-fnm use 11
-success "Switched to Node v11"
+fnm use 12
+success "Switched to Node v12"
 
 find * -name "*.list" | while read fn; do
     cmd="${fn%.*}"

@@ -9,13 +9,11 @@ For more information about dotfiles, I wrote these articles on my blog:
 1. Restore your safely backed up ssh keys to `~/.ssh/`
     1. Alternatively, generate new ssh keys, and add these to your GitHub account
 2. Install Homebrew and git
-
   ```bash
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   brew install git
   ```
 3. Clone this repository
-
   ```
   git clone git@github.com:rkalis/dotfiles.git
   ```
@@ -24,9 +22,8 @@ For more information about dotfiles, I wrote these articles on my blog:
 5. (Optional) Install missing applications from the internet
   * [Popcorn Time](https://popcorntime.sh/)
   * [Pyxel Edit](http://pyxeledit.com/)
-  * [UvAVPN](http://student.uva.nl/en/content/az/uvavpn/download/download-uvavpn-software.html)
+  * [TransIP Stack](https://www.transip.nl/stack/)
 6. (Optional) Point the Alfred preference sync to the right folder
-7. (Optional) Point the Microsoft Remote Desktop folder to the right folder
 
 ## Customisation
 I strongly encourage you to play around with the configurations, and add or remove features.
