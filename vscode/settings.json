@@ -55,4 +55,5 @@
     "files.associations": {
         "*.cash": "solidity"
     },
+    "terminal.integrated.shell.osx": "/usr/local/bin/fish",
 }

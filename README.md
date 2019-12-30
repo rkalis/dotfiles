@@ -24,6 +24,7 @@ For more information about dotfiles, I wrote these articles on my blog:
   * [Pyxel Edit](http://pyxeledit.com/)
   * [TransIP Stack](https://www.transip.nl/stack/)
 6. (Optional) Point the Alfred preference sync to the right folder
+7. Login to applications, enter license keys, set preferences
 
 ## Customisation
 I strongly encourage you to play around with the configurations, and add or remove features.
@@ -69,12 +70,17 @@ files
   * abbrex.fish - Utility for expanding abbreviations in fish-scripts
   * clear.fish - Clears the screen and shows fish_greeting
   * emptytrash.fish - Empties trash and clears system logs
-  * fish_greeting.fish - My personal fish greeting using the
-  full-colour fish logo
+  * enter_service.fish - Enter a Docker swarm service
+  * fish_greeting.fish - Fish greeting with fish logo
   * fish_prompt.fish - The Classic + Git prompt from the fish web config
+  * fisher.fish - Fish plugin manager
   * forrepos.fish - Executes a passed command for all repos in `~/repos`
+  * git.fish - Alias to GitHub's `hub` utility
   * ls.fish - Calling ls with parameter --color=auto
-  * pubkey.fish - Copies the public key to the clipboard
+  * manp.fish - Open a man page in Preview
+  * mvnpurge.fish - Purge local mvn repository
+  * proxy.fish - Open a proxy to my server
+  * pubkey.fish - Copies the SSH public key to the clipboard
   * repo.fish - Finds a repository in `~/repos` and jumps to it
   * repodir.fish - Finds a repository in `~/repos` and prints its path
   * setup.fish - Initial setup for a new fish installation,
@@ -92,7 +98,9 @@ several compiled files
 ### Hammerspoon (hammerspoon/)
 * setup.sh - Symlinks all lua and AppleScript files to `~/.hammerspoon/`
 * init.lua - Contains the main Hammerspoon config, importing the others
+* bluetooth.lua - Toggles Bluetooth headset connection
 * caffeinate.lua - Shortcuts for managing screen state (locking, etc.)
+* connect_sony.applescript - Toggles Bluetooth headset connection
 * hyper.lua - Binds the "F18" key to a Hyper mode, which can be used for
 global commands
 * minimising.lua - Shortcuts for minimising and unminimising windows
@@ -110,9 +118,6 @@ global commands
 
 ### Packages (packages/)
 * setup.sh - Installs the contents of the .list files and the Brewfile
-
-### Python (python/)
-* setup.sh - Creates the conda envs for the environment.yml files
 
 ### Repositories (repos/)
 * setup.sh - Clones the repositories in the .list files at the corresponding
