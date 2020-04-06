@@ -1,16 +1,14 @@
 require "hyper"
 require "caffeinate"
 require "minimising"
-require "togglevpn"
 require "spectacle"
 require "shortcuts"
 require "bluetooth"
-require "toggle_input_volume"
 
 -----------------------------------------------
 -- Reload config on write
 -----------------------------------------------
-function reload_config(files)
+local function reload_config()
   hs.reload()
 end
 

@@ -18,7 +18,7 @@
     "window.zoomLevel": 0,
 
     "python.linting.pylintEnabled": true,
-    "python.linting.pep8Enabled": false,
+    "python.linting.pycodestyleEnabled": false,
     "python.pythonPath": "/usr/local/bin/python3",
 
     "eslint.validate": [
@@ -37,9 +37,27 @@
         "editor.tabSize": 2
     },
 
+    "[tsx]": {
+        "editor.tabSize": 2
+    },
+
+    "[jsx]": {
+        "editor.tabSize": 2
+    },
+
     "[html]": {
         "editor.tabSize": 2
     },
+
+    "[css]": {
+        "editor.tabSize": 2
+    },
+
+    "[lua]": {
+        "editor.tabSize": 2
+    },
+
+    "Lua.diagnostics.disable": ["undefined-global"],
 
     "git.autofetch": true,
     "terminal.integrated.rendererType": "dom",
@@ -56,4 +74,5 @@
         "*.cash": "solidity"
     },
     "terminal.integrated.shell.osx": "/usr/local/bin/fish",
+    "diffEditor.ignoreTrimWhitespace": false
 }

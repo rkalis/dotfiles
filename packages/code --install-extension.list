@@ -5,13 +5,11 @@ CoenraadS.bracket-pair-colorizer
 dbaeumer.vscode-eslint
 eamodio.gitlens
 EditorConfig.EditorConfig
-fivethree.vscode-ionic-snippets
 idleberg.applescript
 joaompinto.asciidoctor-vscode
 johnpapa.Angular2
 JuanBlanco.solidity
 justusadam.language-haskell
-lextudio.restructuredtext
 mike-lischke.vscode-antlr4
 mikestead.dotenv
 mitaki28.vscode-clang
@@ -23,6 +21,6 @@ naumovs.color-highlight
 pixelbyte-studios.pixelbyte-love2d
 PKief.material-icon-theme
 skyapps.fish-vscode
-trixnz.vscode-lua
+sumneko.lua
 UCL.haskelly
 vincaslt.highlight-matching-tag

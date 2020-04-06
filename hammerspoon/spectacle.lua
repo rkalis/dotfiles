@@ -210,15 +210,6 @@ hyper:bind({"cmd"}, "right", function()
   hyper.triggered = true
 end)
 
-hyper:bind({}, "i", function()
-  local win = hs.window.frontmostWindow()
-  local id = win:id()
-  local screen = win:screen()
-  cell = hs.grid.get(win, screen)
-  hs.alert.show(cell)
-  hyper.triggered = true
-end)
-
 hyper:bind({}, "return", function()
   local win = hs.window.frontmostWindow()
   win:setFullscreen(not win:isFullscreen())
