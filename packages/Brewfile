@@ -36,7 +36,7 @@ cask 'mongodb-compass'
 cask 'mysqlworkbench'
 cask 'nordvpn'
 cask 'paintbrush'
-cask 'parallels
+cask 'parallels'
 cask 'pgadmin4'
 cask 'postman'
 cask 'slack'
