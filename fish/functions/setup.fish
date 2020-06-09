@@ -7,7 +7,7 @@ function setup
     abbr g git
     abbr gf git fetch
     abbr gs git status
-    abbr gc git commit -m
+    abbr gc git commit
     abbr gm git pull --ff-only
     abbr gr git rb FETCH_HEAD
     abbr ga git add
