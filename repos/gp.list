@@ -1,0 +1,5 @@
+git@gitlab.com:GeneralProtocols/electrum-cash.git
+git@gitlab.com:GeneralProtocols/priceoracle/library.git priceoracle-library
+git@gitlab.com:GeneralProtocols/priceoracle/software.git priceoracle-software
+git@gitlab.com:GeneralProtocols/anyhedge/library.git anyhedge-library
+git@gitlab.com:GeneralProtocols/eslint-config.git

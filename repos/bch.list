@@ -1,8 +1,7 @@
-git@github.com:Bitcoin-com/bitbox-sdk.git
-git@github.com:Bitcoin-com/bitcoincashjs-lib.git
+git@github.com:bitauth/bitcoin-ts.git
+git@github.com:christroutner/bitcoincashjs-lib.git
 git@github.com:EyeOfPython/cashproof.git
 git@github.com:Bitcoin-com/cashscript.git
-git@github.com:Bitcoin-com/developer.bitcoin.com.git
-git@github.com:Bitcoin-com/rest.bitcoin.com.git
+git@github.com:ivy-lang/ivy-bitcoin.git
 git@bitbucket.org:o-studio/spedn.git
 git@github.com:rkalis/wbch.git
