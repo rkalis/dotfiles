@@ -6,25 +6,21 @@ For more information about dotfiles, I wrote these articles on my blog:
 * [Set up a Hyper Key with Hammerspoon on macOS](https://kalis.me/setup-hyper-key-hammerspoon-macos/)
 
 ## Usage
-1. Restore your safely backed up ssh keys to `~/.ssh/`
-    1. Alternatively, generate new ssh keys, and add these to your GitHub account
+1. Generate new SSH keys and add them to your GitHub account
+    1. Alternatively, restore your safely backed up SSH keys to `~/.ssh/`
 2. Install Homebrew and git
   ```bash
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   brew install git
   ```
 3. Clone this repository
-  ```
+  ```bash
   git clone git@github.com:rkalis/dotfiles.git
   ```
 4. Run the `bootstrap.sh` script
     1. Alternatively, only run the `setup.sh` scripts in specific subfolders if you don't need everything
-5. (Optional) Install missing applications from the internet
-  * [Popcorn Time](https://popcorntime.sh/)
-  * [Pyxel Edit](http://pyxeledit.com/)
-  * [TransIP Stack](https://www.transip.nl/stack/)
-6. (Optional) Point the Alfred preference sync to the right folder
-7. Login to applications, enter license keys, set preferences
+5. (Optional) Point the Alfred preference sync to a backed up folder
+6. Login to applications, enter license keys, set preferences
 
 ## Customisation
 I strongly encourage you to play around with the configurations, and add or remove features.
@@ -36,14 +32,13 @@ If you would like to use these dotfiles for yourself, I'd recommend changing at 
 #### OSX
 * At the top of the setup.sh file, my computer name is set, replace this with your own computer name
 
-####  Packages
+#### Packages
 This folder is a collection of the programs and utilities I use frequently. These lists can easily be amended to your liking.
 
 #### Repos
 This folder is a collection of my own repos, some of which are even private. The existing lists can easily be edited or replaced by custom lists.
 
 ## Contents
-
 ### Root (/)
 * bootstrap.sh - Calls all setup.sh scripts
 
@@ -62,8 +57,8 @@ files
 ### Fish (fish/)
 * setup.sh - Symlinks all fish files to their corresponding location in `~/.config/fish/`
 * config.fish - Global fish configuration (.fishrc)
+* fishfile - List of `fisher` plugins
 * completions/
-  * conda.fish - Contains completions to all `conda` commands
   * repo.fish - Contains all repos as completions for the `repo` command
   * repodir.fish - Contains all repos as completions for the `repodir` command
 * functions/
@@ -106,8 +101,6 @@ global commands
 * minimising.lua - Shortcuts for minimising and unminimising windows
 * shortcuts.lua - Hyper key bindings to existing shortcuts
 * spectacle.lua - Window and monitor management using hyper mode
-* togglevpn.applescript - Toggles Viscosity vpn connection
-* togglevpn.lua - Binds a shortcut to the execution of `togglevpn.applescript`
 
 ### Karabiner (karabiner/)
 * setup.sh - Symlinks Karabiner settings to `~/.config/karabiner`
