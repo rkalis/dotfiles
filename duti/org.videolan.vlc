@@ -1,3 +1,17 @@
-.mkv
+# Audio
+.mp3
+.mpa
+.ogg
+.wav
+.wma
+# Disk Image
+.iso
+# Video
 .avi
+.m4v
+.mkv
+.mov
 .mp4
+.mpg
+.mpeg
+.wmv
