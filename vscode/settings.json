@@ -74,5 +74,10 @@
         "*.cash": "solidity"
     },
     "terminal.integrated.shell.osx": "/usr/local/bin/fish",
-    "diffEditor.ignoreTrimWhitespace": false
+    "diffEditor.ignoreTrimWhitespace": false,
+    "git.confirmSync": false,
+
+    "solidity.packageDefaultDependenciesContractsDirectory": "",
+    "solidity.packageDefaultDependenciesDirectory": "node_modules",
+    "solidity.compileUsingRemoteVersion": "latest"
 }
