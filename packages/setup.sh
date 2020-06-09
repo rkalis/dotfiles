@@ -21,9 +21,7 @@ find * -name "*.list" | while read fn; do
     set -- $cmd
     info "Installing $1 packages..."
     while read package; do
-        if [[ $package == $COMMENT ]];
-        then continue
-        fi
+        if [[ $package == $COMMENT ]]; then continue; fi
         substep_info "Installing $package..."
         $cmd $package
     done < "$fn"

@@ -1,14 +1,9 @@
 npm
-angular-cli
-eslint
 ethereum-bridge
 ganache-cli
 ghost-cli
-gulp
 lerna
 love.js
-mocha
-parcel-bundler
 truffle
 ts-node
 typescript
