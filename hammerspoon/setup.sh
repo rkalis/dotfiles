@@ -5,8 +5,8 @@ cd "$DIR"
 
 . ../scripts/functions.sh
 
-SOURCE="$(realpath .)"
-DESTINATION="$(realpath ~/.hammerspoon)"
+SOURCE="$(realpath -m .)"
+DESTINATION="$(realpath -m ~/.hammerspoon)"
 
 info "Setting up Hammerspoon..."
 
