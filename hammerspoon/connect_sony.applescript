@@ -1,25 +1,25 @@
-activate application "SystemUIServer"
-tell application "System Events"
-    tell process "SystemUIServer"
-        set btMenu to (menu bar item 1 of menu bar 1 whose description contains "bluetooth")
-        tell btMenu
-            click
-            try
-                tell (menu item "Rosco's Headphones" of menu 1)
-                    click
-                    if exists menu item "Connect" of menu 1 then
-                        click menu item "Connect" of menu 1
-                        return "Connecting..."
-                    else if exists menu item "Disconnect" of menu 1 then
-                        click menu item "Disconnect" of menu 1
-                        return "Disconnecting..."
-                    end if
-                end tell
-            end try
-        end tell
-    end tell
-    key code 53
-    return "Device not found or Bluetooth turned off"
-end tell
+-- Source: https://www.reddit.com/r/MacOS/comments/i4czgu/big_sur_airpods_script/gck3gz3
+-- Works on macOS 11 Big Sur
 
+use framework "IOBluetooth"
+use scripting additions
 
+set DeviceName to "Rosco's Headphones"
+
+on getFirstMatchingDevice(deviceName)
+    repeat with device in (current application's IOBluetoothDevice's pairedDevices() as list)
+        if (device's nameOrAddress as string) contains deviceName then return device
+    end repeat
+end getFirstMatchingDevice
+
+on toggleDevice(device)
+    if not (device's isConnected as boolean) then
+        device's openConnection()
+        return "Connecting " & (device's nameOrAddress as string)
+    else
+        device's closeConnection()
+        return "Disconnecting " & (device's nameOrAddress as string)
+    end if
+end toggleDevice
+
+return toggleDevice(getFirstMatchingDevice(DeviceName))
