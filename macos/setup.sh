@@ -21,7 +21,6 @@ sudo -v
 # Keep-alive: update existing `sudo` time stamp until `.macos` has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
-# Set computer name
 ###############################################################################
 # General UI/UX                                                               #
 ###############################################################################
@@ -50,6 +49,9 @@ defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 2
 
 # Disable the over-the-top focus ring animation
 defaults write NSGlobalDomain NSUseAnimatedFocusRing -bool false
+
+# Adjust toolbar title rollover delay
+# defaults write NSGlobalDomain NSToolbarTitleViewRolloverDelay -float 0
 
 # Disable smooth scrolling
 # (Uncomment if you’re on an older Mac that messes up the animation)
@@ -183,7 +185,8 @@ sudo defaults write /Library/Preferences/com.apple.loginwindow showInputMenu -bo
 sudo systemsetup -settimezone "Europe/Amsterdam" > /dev/null
 
 # Stop iTunes from responding to the keyboard media keys
-launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/null
+# UNCOMMENTING THIS DISABLED MEDIA KEYS ALTOGETHER; WOULD NOT RECOMMEND
+# launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/null
 
 ###############################################################################
 # Energy saving                                                               #
@@ -393,7 +396,7 @@ defaults write com.apple.dock show-process-indicators -bool true
 defaults write com.apple.dock persistent-apps -array
 
 # Show only open applications in the Dock
-#defaults write com.apple.dock static-only -bool true
+# defaults write com.apple.dock static-only -bool true
 
 # Animate opening applications from the Dock
 defaults write com.apple.dock launchanim -bool true
@@ -724,14 +727,14 @@ for app in "Activity Monitor" \
 	"Contacts" \
 	"Dock" \
 	"Finder" \
-	"Mail" \
 	"Messages" \
 	"Photos" \
 	"Safari" \
 	"SystemUIServer" \
 	"Terminal" \
-	"Transmission"; do
+	"Transmission" \
+	"iCal"; do
 	killall "${app}" &> /dev/null
 done
 
-success "FInished setting macOS defaults. Note that some of these changes require a logout/restart to take effect."
+success "Finished setting macOS defaults. Note that some of these changes require a logout/restart to take effect."
