@@ -8,7 +8,7 @@ end)
 
 hyper:bind({"cmd"}, "b", function()
   bluetooth.power(true)
-  local _, output = hs.osascript.applescriptFromFile("connect_sony.applescript")
+  local _, output = hs.osascript.applescriptFromFile("connect_headphones.applescript")
   hs.alert.show(output)
   hyper.triggered = true
 end)
