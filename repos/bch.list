@@ -1,5 +1,5 @@
 git@github.com:bitauth/libauth.git
 git@github.com:Bitcoin-com/cashscript.git
 git@github.com:rkalis/cashscript-playground.git
-git@gitlab.com:GeneralProtocols/electrum-cash.git
+git@gitlab.com:GeneralProtocols/electrum-cash/library.git electrum-cash
 git@github.com:rkalis/electrum-cli.git
