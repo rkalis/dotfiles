@@ -88,6 +88,5 @@ brew 'youtube-dl'
 mas 'Amphetamine', id: 937984704
 mas 'Blackmagic Disk Speed Test', id: 425264550
 mas 'HP Easy Scan', id: 967004861
-mas 'iMovie', id: 408981434
 mas 'Shotty', id: 1250306151
 mas 'Ulysses | Writing App', id: 1225570693
