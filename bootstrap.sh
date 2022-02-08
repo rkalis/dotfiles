@@ -23,6 +23,9 @@ else
     error "Failed to install XCode command line tools."
 fi
 
+info "Installing Rosetta..."
+sudo softwareupdate --install-rosetta
+
 # Package control must be executed first in order for the rest to work
 ./packages/setup.sh
 
