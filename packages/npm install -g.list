@@ -1,10 +1,7 @@
 npm
-ethereum-bridge
-ganache-cli
+cashc
+ganache
 ghost-cli
-lerna
-love.js
 truffle
 ts-node
-typescript
 yarn

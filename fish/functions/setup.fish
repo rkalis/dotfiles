@@ -3,7 +3,6 @@ function setup
     for abbreviation in (abbr -l)
         abbr -e $abbreviation
     end
-    abbr mci mvn clean install
     abbr g git
     abbr gf git fetch
     abbr gs git status
