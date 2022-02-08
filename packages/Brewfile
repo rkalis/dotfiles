@@ -21,7 +21,6 @@ cask 'hammerspoon'
 cask 'imageoptim'
 cask 'inkscape'
 cask 'iterm2'
-cask 'java'
 cask 'karabiner-elements'
 cask 'ledger-live'
 cask 'logitech-gaming-software'
@@ -49,7 +48,7 @@ cask 'visual-studio-code'
 cask 'vlc'
 cask 'whatsapp'
 cask 'xquartz'
-cask 'zoomus'
+cask 'zoom'
 
 brew 'act'
 brew 'antlr'
@@ -92,4 +91,3 @@ mas 'HP Easy Scan', id: 967004861
 mas 'iMovie', id: 408981434
 mas 'Shotty', id: 1250306151
 mas 'Ulysses | Writing App', id: 1225570693
-mas 'Xcode', id: 497799835
