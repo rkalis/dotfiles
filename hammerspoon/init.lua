@@ -3,7 +3,6 @@ require "caffeinate"
 require "minimising"
 require "spectacle"
 require "shortcuts"
-require "bluetooth"
 
 -----------------------------------------------
 -- Reload config on write
