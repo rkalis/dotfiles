@@ -30,9 +30,11 @@
         "vue"
     ],
 
-    "[typescript][javascript][tsx][jsx][html][css]": {
+    "[typescript][javascript][typescriptreact][javascriptreact][html][css]": {
         "editor.tabSize": 2
     },
+    "javascript.preferences.quoteStyle": "single",
+    "typescript.preferences.quoteStyle": "single",
 
     "Lua.diagnostics.disable": ["undefined-global"],
 
@@ -45,5 +47,7 @@
     "git.confirmSync": false,
 
     "cSpell.enabled": false,
-    "diffEditor.ignoreTrimWhitespace": false
+    "diffEditor.ignoreTrimWhitespace": false,
+    "terminal.integrated.scrollback": 10000,
+    "emmet.showAbbreviationSuggestions": true,
 }
