@@ -5,6 +5,10 @@ set -x -g TERM "xterm-256color"
 set -x -g LC_ALL en_GB.UTF-8
 set -x -g LANG en_GB.UTF-8
 
+# Homebrew paths
+set -x -g PATH /usr/local/bin /usr/local/sbin $PATH
+set -x -g PATH /opt/homebrew/bin /opt/homebrew/sbin $PATH
+
 # Coreutils bin and man folders
 set -x -g PATH (brew --prefix coreutils)/libexec/gnubin $PATH
 # set -x -g MANPATH (brew --prefix coreutils)/libexec/gnuman $MANPATH
@@ -17,11 +21,14 @@ set -x -g PATH (brew --prefix findutils)/libexec/gnubin $PATH
 set -x -g PATH ~/go/bin $PATH
 
 # User bin folder
-set -x -g PATH ~/bin ~/.local/bin $PATH /usr/local/sbin
+set -x -g PATH ~/bin ~/.local/bin $PATH
 
 # Composer
 set -x -g PATH ~/.composer/vendor/bin $PATH
 
 # fnm
 set -x -g PATH /home/rosco/.fnm $PATH
-fnm env --multi | source
+fnm env --use-on-cd | source
+
+test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
+

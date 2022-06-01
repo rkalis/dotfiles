@@ -24,10 +24,10 @@ set_fish_shell() {
         success "Fish shell is already set up."
     else
         substep_info "Adding fish executable to /etc/shells"
-        if grep --fixed-strings --line-regexp --quiet "/usr/local/bin/fish" /etc/shells; then
+        if grep --fixed-strings --line-regexp --quiet "$(which fish)" /etc/shells; then
             substep_success "Fish executable already exists in /etc/shells."
         else
-            if sudo bash -c "echo /usr/local/bin/fish >> /etc/shells"; then
+            if sudo bash -c "echo "$(which fish)" >> /etc/shells"; then
                 substep_success "Fish executable added to /etc/shells."
             else
                 substep_error "Failed adding Fish executable to /etc/shells."
